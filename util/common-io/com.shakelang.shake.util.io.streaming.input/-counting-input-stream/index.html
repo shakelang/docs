@@ -1,0 +1,393 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CountingInputStream</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":util:common-io:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="common-io::com.shakelang.shake.util.io.streaming.input/CountingInputStream///PointingToDeclaration//-1313935293">
+  <div class="breadcrumbs"><a href="../../index.html">common-io</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.util.io.streaming.input</a><span class="delimiter">/</span><span class="current">CountingInputStream</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Counting</span><wbr><span>Input</span><wbr><span><span>Stream</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CountingInputStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../-input-stream/index.html">InputStream</a></span></span><span class="token punctuation">)</span> : <a href="../-input-stream/index.html">InputStream</a></div><p class="paragraph">This class is an input stream that reads from another input stream and counts the read bytes</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">0.1.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>data</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The input stream to count the read bytes from</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="644128825%2FConstructors%2F-1313935293" anchor-label="CountingInputStream" id="644128825%2FConstructors%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-counting-input-stream.html"><span>Counting</span><wbr><span>Input</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="644128825%2FConstructors%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../-input-stream/index.html">InputStream</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Creates a new CountingInputStream</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1532911328%2FProperties%2F-1313935293" anchor-label="bufferedStream" id="-1532911328%2FProperties%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../buffered-stream.html"><span>buffered</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1532911328%2FProperties%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-input-stream/index.html">InputStream</a><span class="token punctuation">.</span><a href="../buffered-stream.html">bufferedStream</a><span class="token operator">: </span><a href="../-buffered-input-stream/index.html">BufferedInputStream</a></div><div class="brief "><p class="paragraph">Returns a BufferedInputStream that reads from this input stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1190576406%2FProperties%2F-1313935293" anchor-label="byteCount" id="-1190576406%2FProperties%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-count.html"><span>byte</span><wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1190576406%2FProperties%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="byte-count.html">byteCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The count of read bytes from the input stream</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1551300158%2FProperties%2F-1313935293" anchor-label="count" id="-1551300158%2FProperties%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="count.html"><span><span>count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1551300158%2FProperties%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="count.html">count</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The count of read bytes from the input stream</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="227819956%2FProperties%2F-1313935293" anchor-label="countingStream" id="227819956%2FProperties%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../counting-stream.html"><span>counting</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="227819956%2FProperties%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-input-stream/index.html">InputStream</a><span class="token punctuation">.</span><a href="../counting-stream.html">countingStream</a><span class="token operator">: </span><a href="index.html">CountingInputStream</a></div><div class="brief "><p class="paragraph">Returns a CountingInputStream that reads from this input stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="742760235%2FProperties%2F-1313935293" anchor-label="dataStream" id="742760235%2FProperties%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../data-stream.html"><span>data</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="742760235%2FProperties%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-input-stream/index.html">InputStream</a><span class="token punctuation">.</span><a href="../data-stream.html">dataStream</a><span class="token operator">: </span><a href="../-data-input-stream/index.html">DataInputStream</a></div><div class="brief "><p class="paragraph">Returns a DataInputStream that reads from this input stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="940492577%2FProperties%2F-1313935293" anchor-label="operationCount" id="940492577%2FProperties%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="operation-count.html"><span>operation</span><wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="940492577%2FProperties%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="operation-count.html">operationCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The count of read operations from the input stream</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-381662225%2FProperties%2F-1313935293" anchor-label="readFully" id="-381662225%2FProperties%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../read-fully.html"><span>read</span><wbr><span><span>Fully</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-381662225%2FProperties%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-input-stream/index.html">InputStream</a><span class="token punctuation">.</span><a href="../read-fully.html">readFully</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">Returns a BufferedInputStream that reads from this input stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-332841324%2FFunctions%2F-1313935293" anchor-label="asBufferedInputStream" id="-332841324%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../as-buffered-input-stream.html"><span>as</span><wbr><span>Buffered</span><wbr><span>Input</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-332841324%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../-input-stream/index.html">InputStream</a><span class="token punctuation">.</span><a href="../as-buffered-input-stream.html"><span class="token function">asBufferedInputStream</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-buffered-input-stream/index.html">BufferedInputStream</a></div><div class="brief "><p class="paragraph">Returns a BufferedInputStream that reads from this input stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1315428992%2FFunctions%2F-1313935293" anchor-label="asCountingInputStream" id="1315428992%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../as-counting-input-stream.html"><span>as</span><wbr><span>Counting</span><wbr><span>Input</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1315428992%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../-input-stream/index.html">InputStream</a><span class="token punctuation">.</span><a href="../as-counting-input-stream.html"><span class="token function">asCountingInputStream</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CountingInputStream</a></div><div class="brief "><p class="paragraph">Returns a CountingInputStream that reads from this input stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2027415959%2FFunctions%2F-1313935293" anchor-label="asDataInputStream" id="-2027415959%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../as-data-input-stream.html"><span>as</span><wbr><span>Data</span><wbr><span>Input</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2027415959%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../-input-stream/index.html">InputStream</a><span class="token punctuation">.</span><a href="../as-data-input-stream.html"><span class="token function">asDataInputStream</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-data-input-stream/index.html">DataInputStream</a></div><div class="brief "><p class="paragraph">Returns a DataInputStream that reads from this input stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1512563896%2FFunctions%2F-1313935293" anchor-label="available" id="-1512563896%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="available.html"><span><span>available</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1512563896%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="available.html"><span class="token function">available</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Gets the number of bytes that can be read from the input stream without blocking and without increasing the count</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2054380295%2FFunctions%2F-1313935293" anchor-label="close" id="-2054380295%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close.html"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2054380295%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Closes the input stream</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-26249862%2FFunctions%2F-1313935293" anchor-label="mark" id="-26249862%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mark.html"><span><span>mark</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26249862%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="mark.html"><span class="token function">mark</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">readlimit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Marks the current position in the input stream</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="928752304%2FFunctions%2F-1313935293" anchor-label="markSupported" id="928752304%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mark-supported.html"><span>mark</span><wbr><span><span>Supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="928752304%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="mark-supported.html"><span class="token function">markSupported</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if the input stream supports marking/resetting</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2053192269%2FFunctions%2F-1313935293" anchor-label="read" id="-2053192269%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read.html"><span><span>read</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2053192269%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read.html"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Reads a single byte from the input stream and increases the count by one</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read.html"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read.html"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">off<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">len<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Reads bytes from the input stream and increases the count by the number of read bytes</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2079814546%2FFunctions%2F-1313935293" anchor-label="readNBytes" id="-2079814546%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-n-bytes.html"><span>read</span><wbr><span><span>NBytes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2079814546%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read-n-bytes.html"><span class="token function">readNBytes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">n<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">Reads bytes from the input stream and increases the count by the number of read bytes</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read-n-bytes.html"><span class="token function">readNBytes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">off<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">len<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Reads bytes from the input streamand increases the count by the number of read bytes</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="722240898%2FFunctions%2F-1313935293" anchor-label="reset" id="722240898%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset.html"><span><span>reset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="722240898%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="reset.html"><span class="token function">reset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Resets the input stream to the last marked position</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-586266481%2FFunctions%2F-1313935293" anchor-label="skip" id="-586266481%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="skip.html"><span><span>skip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-586266481%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="skip.html"><span class="token function">skip</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">n<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Skips bytes from the input stream and increases the count by the number of skipped bytes</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1883402723%2FFunctions%2F-1313935293" anchor-label="toString" id="-1883402723%2FFunctions%2F-1313935293" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1883402723%2FFunctions%2F-1313935293"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
