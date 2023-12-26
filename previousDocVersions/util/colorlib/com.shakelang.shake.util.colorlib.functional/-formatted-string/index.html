@@ -1,0 +1,1282 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>FormattedString</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":util:colorlib:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="colorlib::com.shakelang.shake.util.colorlib.functional/FormattedString///PointingToDeclaration//-22984405">
+  <div class="breadcrumbs"><a href="../../index.html">colorlib</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.util.colorlib.functional</a><span class="delimiter">/</span><span class="current">FormattedString</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Formatted</span><wbr><span><span>String</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">FormattedString</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>contents<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-formatted-string-object/index.html">FormattedStringObject</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">isBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isItalic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isUnderlined<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isStrikethrough<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isInverted<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>backgroundColor<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../-formatted-string-object/index.html">FormattedStringObject</a></div><p class="paragraph">A formatted <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> that can be used to format <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>s with colors and styles</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">0.1.1</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>contents</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the <a href="../-formatted-string-object/index.html">FormattedStringObject</a>s that are wrapped in this <a href="index.html">FormattedString</a></p></div></div></div></div><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr><span><span>Bold</span></span></u></div></span></div><div><div class="title"><p class="paragraph">if the <a href="index.html">FormattedString</a> is bold</p></div></div></div></div><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr><span><span>Italic</span></span></u></div></span></div><div><div class="title"><p class="paragraph">if the <a href="index.html">FormattedString</a> is italic</p></div></div></div></div><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr><span><span>Underlined</span></span></u></div></span></div><div><div class="title"><p class="paragraph">if the <a href="index.html">FormattedString</a> is underlined</p></div></div></div></div><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr><span><span>Strikethrough</span></span></u></div></span></div><div><div class="title"><p class="paragraph">if the <a href="index.html">FormattedString</a> is strikethrough</p></div></div></div></div><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr><span><span>Inverted</span></span></u></div></span></div><div><div class="title"><p class="paragraph">if the <a href="index.html">FormattedString</a> is inverted</p></div></div></div></div><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>color</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of the <a href="index.html">FormattedString</a></p></div></div></div></div><div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>background</span><wbr><span><span>Color</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of the <a href="index.html">FormattedString</a></p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1583124346%2FConstructors%2F-22984405" anchor-label="FormattedString" id="1583124346%2FConstructors%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-formatted-string.html"><span>Formatted</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1583124346%2FConstructors%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contents<span class="token operator">: </span><a href="index.html">FormattedString</a><span class="token punctuation">, </span></span><span class="parameter ">strings<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-formatted-string-object/index.html">FormattedStringObject</a><span class="token operator">&gt;</span><span class="token operator"> = </span>contents.contents<span class="token punctuation">, </span></span><span class="parameter ">isBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>contents.isBold<span class="token punctuation">, </span></span><span class="parameter ">isItalic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>contents.isItalic<span class="token punctuation">, </span></span><span class="parameter ">isUnderlined<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>contents.isUnderlined<span class="token punctuation">, </span></span><span class="parameter ">isStrikethrough<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>contents.isStrikethrough<span class="token punctuation">, </span></span><span class="parameter ">isInverted<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>contents.isInverted<span class="token punctuation">, </span></span><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a><span class="token operator">?</span><span class="token operator"> = </span>contents.color<span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a><span class="token operator">?</span><span class="token operator"> = </span>contents.backgroundColor</span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contents<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-formatted-string-object/index.html">FormattedStringObject</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">isBold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isItalic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isUnderlined<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isStrikethrough<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isInverted<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Creates a <a href="index.html">FormattedString</a> with the given <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">contents</a>, <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">isBold</a>, <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">isItalic</a>, <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">isUnderlined</a>, <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">isStrikethrough</a>, <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">isInverted</a>, <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">color</a> and <a href="../../../../util/colorlib/com.shakelang.shake.util.colorlib.functional/-formatted-string/[60]init[62].html">backgroundColor</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1261054589%2FClasslikes%2F-22984405" anchor-label="Companion" id="-1261054589%2FClasslikes%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1261054589%2FClasslikes%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="451107783%2FProperties%2F-22984405" anchor-label="backgroundColor" id="451107783%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="background-color.html"><span>background</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="451107783%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="background-color.html">backgroundColor</a><span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">The <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of the <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2140540487%2FProperties%2F-22984405" anchor-label="color" id="-2140540487%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="color.html"><span><span>color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2140540487%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="color.html">color</a><span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">The <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of the <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1623731588%2FProperties%2F-22984405" anchor-label="contents" id="1623731588%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contents.html"><span><span>contents</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1623731588%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="contents.html">contents</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-formatted-string-object/index.html">FormattedStringObject</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The <a href="../-formatted-string-object/index.html">FormattedStringObject</a>s that are wrapped in this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1275221673%2FProperties%2F-22984405" anchor-label="formatsItself" id="1275221673%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="formats-itself.html"><span>formats</span><wbr><span><span>Itself</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1275221673%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="formats-itself.html">formatsItself</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="798559151%2FProperties%2F-22984405" anchor-label="isBold" id="798559151%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-bold.html"><span>is</span><wbr><span><span>Bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="798559151%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-bold.html">isBold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If the <a href="index.html">FormattedString</a> is bold</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1260717558%2FProperties%2F-22984405" anchor-label="isFormatted" id="-1260717558%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-formatted.html"><span>is</span><wbr><span><span>Formatted</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1260717558%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-formatted.html">isFormatted</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Is the FormattedString formatted in any way? (Used to determine if the generated <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> should be formatted and if the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-r-e-s-e-t/index.html">Formatting.RESET</a> should be added)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1266331201%2FProperties%2F-22984405" anchor-label="isInverted" id="-1266331201%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-inverted.html"><span>is</span><wbr><span><span>Inverted</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1266331201%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-inverted.html">isInverted</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If the <a href="index.html">FormattedString</a> is inverted</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1409292452%2FProperties%2F-22984405" anchor-label="isItalic" id="1409292452%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-italic.html"><span>is</span><wbr><span><span>Italic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1409292452%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-italic.html">isItalic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If the <a href="index.html">FormattedString</a> is italic</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="141326163%2FProperties%2F-22984405" anchor-label="isStrikethrough" id="141326163%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-strikethrough.html"><span>is</span><wbr><span><span>Strikethrough</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="141326163%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-strikethrough.html">isStrikethrough</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If the <a href="index.html">FormattedString</a> is strikethrough</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="380907836%2FProperties%2F-22984405" anchor-label="isUnderlined" id="380907836%2FProperties%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-underlined.html"><span>is</span><wbr><span><span>Underlined</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="380907836%2FProperties%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-underlined.html">isUnderlined</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If the <a href="index.html">FormattedString</a> is underlined</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1458654819%2FFunctions%2F-22984405" anchor-label="backgroundColor" id="1458654819%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="background-color.html"><span>background</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1458654819%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="background-color.html"><span class="token function">backgroundColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1094647061%2FFunctions%2F-22984405" anchor-label="bg" id="1094647061%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg.html"><span><span>bg</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1094647061%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg.html"><span class="token function">bg</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1336002178%2FFunctions%2F-22984405" anchor-label="bgBlack" id="1336002178%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-black.html"><span>bg</span><wbr><span><span>Black</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1336002178%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-black.html"><span class="token function">bgBlack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-l-a-c-k/index.html">Formatting.BGColor.BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-933012929%2FFunctions%2F-22984405" anchor-label="bgBlue" id="-933012929%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-blue.html"><span>bg</span><wbr><span><span>Blue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-933012929%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-blue.html"><span class="token function">bgBlue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-l-u-e/index.html">Formatting.BGColor.BLUE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1927080676%2FFunctions%2F-22984405" anchor-label="bgBrightBlack" id="-1927080676%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-black.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>Black</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1927080676%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-black.html"><span class="token function">bgBrightBlack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-b-l-a-c-k/index.html">Formatting.BGColor.BRIGHT_BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1869557659%2FFunctions%2F-22984405" anchor-label="bgBrightBlue" id="-1869557659%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-blue.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>Blue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1869557659%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-blue.html"><span class="token function">bgBrightBlue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-b-l-u-e/index.html">Formatting.BGColor.BRIGHT_BLUE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1966296644%2FFunctions%2F-22984405" anchor-label="bgBrightCyan" id="-1966296644%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-cyan.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>Cyan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1966296644%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-cyan.html"><span class="token function">bgBrightCyan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-c-y-a-n/index.html">Formatting.BGColor.BRIGHT_CYAN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1009515880%2FFunctions%2F-22984405" anchor-label="bgBrightGreen" id="-1009515880%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-green.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>Green</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1009515880%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-green.html"><span class="token function">bgBrightGreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-g-r-e-e-n/index.html">Formatting.BGColor.BRIGHT_GREEN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1212038461%2FFunctions%2F-22984405" anchor-label="bgBrightPurple" id="-1212038461%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-purple.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>Purple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1212038461%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-purple.html"><span class="token function">bgBrightPurple</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-p-u-r-p-l-e/index.html">Formatting.BGColor.BRIGHT_PURPLE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-70362038%2FFunctions%2F-22984405" anchor-label="bgBrightRed" id="-70362038%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-red.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>Red</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-70362038%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-red.html"><span class="token function">bgBrightRed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-r-e-d/index.html">Formatting.BGColor.BRIGHT_RED</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1071643698%2FFunctions%2F-22984405" anchor-label="bgBrightWhite" id="1071643698%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-white.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>White</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1071643698%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-white.html"><span class="token function">bgBrightWhite</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-w-h-i-t-e/index.html">Formatting.BGColor.WHITE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2067637515%2FFunctions%2F-22984405" anchor-label="bgBrightYellow" id="2067637515%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-bright-yellow.html"><span>bg</span><wbr><span>Bright</span><wbr><span><span>Yellow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2067637515%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-bright-yellow.html"><span class="token function">bgBrightYellow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-y-e-l-l-o-w/index.html">Formatting.BGColor.BRIGHT_YELLOW</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="513082554%2FFunctions%2F-22984405" anchor-label="bgColor" id="513082554%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-color.html"><span>bg</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="513082554%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-color.html"><span class="token function">bgColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1029751914%2FFunctions%2F-22984405" anchor-label="bgCyan" id="-1029751914%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-cyan.html"><span>bg</span><wbr><span><span>Cyan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1029751914%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-cyan.html"><span class="token function">bgCyan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-c-y-a-n/index.html">Formatting.BGColor.CYAN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2041400322%2FFunctions%2F-22984405" anchor-label="bgGreen" id="-2041400322%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-green.html"><span>bg</span><wbr><span><span>Green</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2041400322%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-green.html"><span class="token function">bgGreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-g-r-e-e-n/index.html">Formatting.BGColor.GREEN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-876449958%2FFunctions%2F-22984405" anchor-label="bgGrey" id="-876449958%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-grey.html"><span>bg</span><wbr><span><span>Grey</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-876449958%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-grey.html"><span class="token function">bgGrey</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-b-l-a-c-k/index.html">Formatting.BGColor.BRIGHT_BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1159282205%2FFunctions%2F-22984405" anchor-label="bgPurple" id="1159282205%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-purple.html"><span>bg</span><wbr><span><span>Purple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1159282205%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-purple.html"><span class="token function">bgPurple</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-p-u-r-p-l-e/index.html">Formatting.BGColor.PURPLE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1760964400%2FFunctions%2F-22984405" anchor-label="bgRed" id="1760964400%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-red.html"><span>bg</span><wbr><span><span>Red</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1760964400%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-red.html"><span class="token function">bgRed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-r-e-d/index.html">Formatting.BGColor.RED</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="39759256%2FFunctions%2F-22984405" anchor-label="bgWhite" id="39759256%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-white.html"><span>bg</span><wbr><span><span>White</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="39759256%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-white.html"><span class="token function">bgWhite</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-w-h-i-t-e/index.html">Formatting.BGColor.WHITE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="143990885%2FFunctions%2F-22984405" anchor-label="bgYellow" id="143990885%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bg-yellow.html"><span>bg</span><wbr><span><span>Yellow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="143990885%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bg-yellow.html"><span class="token function">bgYellow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-y-e-l-l-o-w/index.html">Formatting.BGColor.YELLOW</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-300664675%2FFunctions%2F-22984405" anchor-label="black" id="-300664675%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="black.html"><span><span>black</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-300664675%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="black.html"><span class="token function">black</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-l-a-c-k/index.html">Formatting.FGColor.BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1092401348%2FFunctions%2F-22984405" anchor-label="blue" id="1092401348%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="blue.html"><span><span>blue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1092401348%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="blue.html"><span class="token function">blue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-l-u-e/index.html">Formatting.FGColor.BLUE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="232580345%2FFunctions%2F-22984405" anchor-label="bold" id="232580345%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bold.html"><span><span>bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232580345%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bold.html"><span class="token function">bold</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Make this <a href="index.html">FormattedString</a> bold</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="683689719%2FFunctions%2F-22984405" anchor-label="brightBlack" id="683689719%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-black.html"><span>bright</span><wbr><span><span>Black</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="683689719%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-black.html"><span class="token function">brightBlack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-b-l-a-c-k/index.html">Formatting.FGColor.BRIGHT_BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-538413270%2FFunctions%2F-22984405" anchor-label="brightBlue" id="-538413270%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-blue.html"><span>bright</span><wbr><span><span>Blue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-538413270%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-blue.html"><span class="token function">brightBlue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-b-l-u-e/index.html">Formatting.FGColor.BRIGHT_BLUE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-635152255%2FFunctions%2F-22984405" anchor-label="brightCyan" id="-635152255%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-cyan.html"><span>bright</span><wbr><span><span>Cyan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-635152255%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-cyan.html"><span class="token function">brightCyan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-c-y-a-n/index.html">Formatting.FGColor.BRIGHT_CYAN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1601254515%2FFunctions%2F-22984405" anchor-label="brightGreen" id="1601254515%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-green.html"><span>bright</span><wbr><span><span>Green</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1601254515%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-green.html"><span class="token function">brightGreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-g-r-e-e-n/index.html">Formatting.FGColor.BRIGHT_GREEN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1882534840%2FFunctions%2F-22984405" anchor-label="brightPurple" id="-1882534840%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-purple.html"><span>bright</span><wbr><span><span>Purple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1882534840%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-purple.html"><span class="token function">brightPurple</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-p-u-r-p-l-e/index.html">Formatting.FGColor.BRIGHT_PURPLE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1496598757%2FFunctions%2F-22984405" anchor-label="brightRed" id="1496598757%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-red.html"><span>bright</span><wbr><span><span>Red</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1496598757%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-red.html"><span class="token function">brightRed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-r-e-d/index.html">Formatting.FGColor.BRIGHT_RED</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-612553203%2FFunctions%2F-22984405" anchor-label="brightWhite" id="-612553203%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-white.html"><span>bright</span><wbr><span><span>White</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-612553203%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-white.html"><span class="token function">brightWhite</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-w-h-i-t-e/index.html">Formatting.FGColor.BRIGHT_WHITE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1397141136%2FFunctions%2F-22984405" anchor-label="brightYellow" id="1397141136%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bright-yellow.html"><span>bright</span><wbr><span><span>Yellow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1397141136%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="bright-yellow.html"><span class="token function">brightYellow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-y-e-l-l-o-w/index.html">Formatting.FGColor.BRIGHT_YELLOW</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-755638831%2FFunctions%2F-22984405" anchor-label="color" id="-755638831%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="color.html"><span><span>color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-755638831%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="color.html"><span class="token function">color</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="995662363%2FFunctions%2F-22984405" anchor-label="cyan" id="995662363%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cyan.html"><span><span>cyan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995662363%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="cyan.html"><span class="token function">cyan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-c-y-a-n/index.html">Formatting.FGColor.CYAN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1628170066%2FFunctions%2F-22984405" anchor-label="extends" id="1628170066%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="extends.html"><span><span>extends</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1628170066%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="extends.html"><span class="token function">extends</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">format<span class="token operator">: </span><a href="index.html">FormattedString</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Extend this <a href="index.html">FormattedString</a> with the given <a href="extends.html">format</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1620391061%2FFunctions%2F-22984405" anchor-label="fg" id="1620391061%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg.html"><span><span>fg</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1620391061%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg.html"><span class="token function">fg</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1885521406%2FFunctions%2F-22984405" anchor-label="fgBlack" id="1885521406%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-black.html"><span>fg</span><wbr><span><span>Black</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1885521406%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-black.html"><span class="token function">fgBlack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-l-a-c-k/index.html">Formatting.BGColor.BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="470186819%2FFunctions%2F-22984405" anchor-label="fgBlue" id="470186819%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-blue.html"><span>fg</span><wbr><span><span>Blue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="470186819%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-blue.html"><span class="token function">fgBlue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-l-u-e/index.html">Formatting.BGColor.BLUE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="309168024%2FFunctions%2F-22984405" anchor-label="fgBrightBlack" id="309168024%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-black.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>Black</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="309168024%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-black.html"><span class="token function">fgBrightBlack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-b-l-a-c-k/index.html">Formatting.BGColor.BRIGHT_BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-550494615%2FFunctions%2F-22984405" anchor-label="fgBrightBlue" id="-550494615%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-blue.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>Blue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-550494615%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-blue.html"><span class="token function">fgBrightBlue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-b-l-u-e/index.html">Formatting.BGColor.BRIGHT_BLUE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-647233600%2FFunctions%2F-22984405" anchor-label="fgBrightCyan" id="-647233600%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-cyan.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>Cyan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-647233600%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-cyan.html"><span class="token function">fgBrightCyan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-c-y-a-n/index.html">Formatting.BGColor.BRIGHT_CYAN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1226732820%2FFunctions%2F-22984405" anchor-label="fgBrightGreen" id="1226732820%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-green.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>Green</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1226732820%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-green.html"><span class="token function">fgBrightGreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-g-r-e-e-n/index.html">Formatting.BGColor.BRIGHT_GREEN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-607805497%2FFunctions%2F-22984405" anchor-label="fgBrightPurple" id="-607805497%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-purple.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>Purple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-607805497%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-purple.html"><span class="token function">fgBrightPurple</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-p-u-r-p-l-e/index.html">Formatting.BGColor.BRIGHT_PURPLE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-859095610%2FFunctions%2F-22984405" anchor-label="fgBrightRed" id="-859095610%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-red.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>Red</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-859095610%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-red.html"><span class="token function">fgBrightRed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-r-e-d/index.html">Formatting.BGColor.BRIGHT_RED</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-987074898%2FFunctions%2F-22984405" anchor-label="fgBrightWhite" id="-987074898%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-white.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>White</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-987074898%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-white.html"><span class="token function">fgBrightWhite</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-w-h-i-t-e/index.html">Formatting.BGColor.BRIGHT_WHITE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1623096817%2FFunctions%2F-22984405" anchor-label="fgBrightYellow" id="-1623096817%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-bright-yellow.html"><span>fg</span><wbr><span>Bright</span><wbr><span><span>Yellow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1623096817%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-bright-yellow.html"><span class="token function">fgBrightYellow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-y-e-l-l-o-w/index.html">Formatting.BGColor.BRIGHT_YELLOW</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1095052466%2FFunctions%2F-22984405" anchor-label="fgColor" id="1095052466%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-color.html"><span>fg</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1095052466%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-color.html"><span class="token function">fgColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="373447834%2FFunctions%2F-22984405" anchor-label="fgCyan" id="373447834%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-cyan.html"><span>fg</span><wbr><span><span>Cyan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="373447834%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-cyan.html"><span class="token function">fgCyan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-c-y-a-n/index.html">Formatting.BGColor.CYAN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1491881094%2FFunctions%2F-22984405" anchor-label="fgGreen" id="-1491881094%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-green.html"><span>fg</span><wbr><span><span>Green</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1491881094%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-green.html"><span class="token function">fgGreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-g-r-e-e-n/index.html">Formatting.BGColor.GREEN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="526749790%2FFunctions%2F-22984405" anchor-label="fgGrey" id="526749790%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-grey.html"><span>fg</span><wbr><span><span>Grey</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="526749790%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-grey.html"><span class="token function">fgGrey</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-b-r-i-g-h-t_-b-l-a-c-k/index.html">Formatting.BGColor.BRIGHT_BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1014509089%2FFunctions%2F-22984405" anchor-label="fgPurple" id="1014509089%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-purple.html"><span>fg</span><wbr><span><span>Purple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1014509089%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-purple.html"><span class="token function">fgPurple</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-p-u-r-p-l-e/index.html">Formatting.BGColor.PURPLE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1806228908%2FFunctions%2F-22984405" anchor-label="fgRed" id="1806228908%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-red.html"><span>fg</span><wbr><span><span>Red</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1806228908%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-red.html"><span class="token function">fgRed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-r-e-d/index.html">Formatting.BGColor.RED</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="589278484%2FFunctions%2F-22984405" anchor-label="fgWhite" id="589278484%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-white.html"><span>fg</span><wbr><span><span>White</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="589278484%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-white.html"><span class="token function">fgWhite</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-w-h-i-t-e/index.html">Formatting.BGColor.WHITE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-782231%2FFunctions%2F-22984405" anchor-label="fgYellow" id="-782231%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fg-yellow.html"><span>fg</span><wbr><span><span>Yellow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-782231%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="fg-yellow.html"><span class="token function">fgYellow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/index.html">Formatting.BGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-b-g-color/-y-e-l-l-o-w/index.html">Formatting.BGColor.YELLOW</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="616900121%2FFunctions%2F-22984405" anchor-label="green" id="616900121%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="green.html"><span><span>green</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="616900121%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="green.html"><span class="token function">green</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-g-r-e-e-n/index.html">Formatting.FGColor.GREEN</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1148964319%2FFunctions%2F-22984405" anchor-label="grey" id="1148964319%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="grey.html"><span><span>grey</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1148964319%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="grey.html"><span class="token function">grey</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-b-r-i-g-h-t_-b-l-a-c-k/index.html">Formatting.FGColor.BRIGHT_BLACK</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1648007032%2FFunctions%2F-22984405" anchor-label="invert" id="-1648007032%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="invert.html"><span><span>invert</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1648007032%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="invert.html"><span class="token function">invert</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Make this <a href="index.html">FormattedString</a> inverted</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1330460818%2FFunctions%2F-22984405" anchor-label="italic" id="-1330460818%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="italic.html"><span><span>italic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1330460818%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="italic.html"><span class="token function">italic</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Make this <a href="index.html">FormattedString</a> italic</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1601903496%2FFunctions%2F-22984405" anchor-label="plus" id="-1601903496%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="plus.html"><span><span>plus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1601903496%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-formatted-string-object/index.html">FormattedStringObject</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1962217314%2FFunctions%2F-22984405" anchor-label="purple" id="1962217314%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="purple.html"><span><span>purple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1962217314%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="purple.html"><span class="token function">purple</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-p-u-r-p-l-e/index.html">Formatting.FGColor.PURPLE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="302279691%2FFunctions%2F-22984405" anchor-label="red" id="302279691%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="red.html"><span><span>red</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="302279691%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="red.html"><span class="token function">red</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-r-e-d/index.html">Formatting.FGColor.RED</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1235764557%2FFunctions%2F-22984405" anchor-label="reset" id="1235764557%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset.html"><span><span>reset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1235764557%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="reset.html"><span class="token function">reset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Extend this <a href="index.html">FormattedString</a> with the given <a href="../format.html">format</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1671917897%2FFunctions%2F-22984405" anchor-label="strikethrough" id="1671917897%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="strikethrough.html"><span><span>strikethrough</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1671917897%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="strikethrough.html"><span class="token function">strikethrough</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Make this <a href="index.html">FormattedString</a> strikethrough</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1965191180%2FFunctions%2F-22984405" anchor-label="string" id="1965191180%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-formatted-string-object/string.html"><span><span>string</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1965191180%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-formatted-string-object/string.html"><span class="token function">string</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Get the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> representation of this <a href="../-formatted-string-object/index.html">FormattedStringObject</a> (Basically a shortcut for <a href="../-formatted-string-object/to-string.html">toString</a>) Not needed to be overridden</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2121381490%2FFunctions%2F-22984405" anchor-label="toString" id="2121381490%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2121381490%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Get the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> representation of this <a href="index.html">FormattedString</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2099788528%2FFunctions%2F-22984405" anchor-label="underline" id="2099788528%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="underline.html"><span><span>underline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2099788528%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="underline.html"><span class="token function">underline</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Make this <a href="index.html">FormattedString</a> underlined</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1596907597%2FFunctions%2F-22984405" anchor-label="white" id="-1596907597%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="white.html"><span><span>white</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1596907597%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="white.html"><span class="token function">white</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-w-h-i-t-e/index.html">Formatting.FGColor.WHITE</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="946925994%2FFunctions%2F-22984405" anchor-label="yellow" id="946925994%2FFunctions%2F-22984405" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:colorlib:dokkaHtmlPartial/commonMain" data-filterable-set=":util:colorlib:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="yellow.html"><span><span>yellow</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="946925994%2FFunctions%2F-22984405"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:colorlib:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="yellow.html"><span class="token function">yellow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">FormattedString</a></div><div class="brief "><p class="paragraph">Set the <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/index.html">Formatting.FGColor</a> of this <a href="index.html">FormattedString</a> to <a href="../../com.shakelang.shake.util.colorlib/-formatting/-f-g-color/-y-e-l-l-o-w/index.html">Formatting.FGColor.YELLOW</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

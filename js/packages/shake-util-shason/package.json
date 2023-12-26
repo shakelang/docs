@@ -1,0 +1,19 @@
+{
+  "name": "shake-util-shason",
+  "version": "0.4.0",
+  "main": "kotlin/shake-util-shason.js",
+  "devDependencies": {},
+  "dependencies": {
+    "path-browserify": "1.0.1",
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "readline": false
+  }
+}

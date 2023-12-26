@@ -1,0 +1,19 @@
+{
+  "name": "shake-shake-compiler-lexer",
+  "version": "0.1.4-SNAPSHOT",
+  "main": "kotlin/shake-shake-compiler-lexer.js",
+  "devDependencies": {},
+  "dependencies": {
+    "path-browserify": "1.0.1",
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "readline": false
+  }
+}

@@ -1,0 +1,264 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.shakelang.shake.parser.node.variables</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":shake:compiler:parser:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="parser::com.shakelang.shake.parser.node.variables////PointingToDeclaration//236034431">
+  <div class="breadcrumbs"><a href="../index.html">parser</a><span class="delimiter">/</span><span class="current">com.shakelang.shake.parser.node.variables</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="910937785%2FClasslikes%2F236034431" anchor-label="ShakeCommonVariableAssignmentNode" id="910937785%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-common-variable-assignment-node/index.html"><span>Shake</span><wbr><span>Common</span><wbr><span>Variable</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="910937785%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="../com.shakelang.shake.parser.node/-shake-valued-statement-node-impl/index.html">ShakeValuedStatementNodeImpl</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2010938239%2FClasslikes%2F236034431" anchor-label="ShakeVariableAddAssignmentNode" id="2010938239%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-add-assignment-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Add</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2010938239%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-add-assignment-node/index.html">ShakeVariableAddAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="863753892%2FClasslikes%2F236034431" anchor-label="ShakeVariableAssignmentNode" id="863753892%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-assignment-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="863753892%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-assignment-node/index.html">ShakeVariableAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2128954195%2FClasslikes%2F236034431" anchor-label="ShakeVariableDeclarationNode" id="2128954195%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-declaration-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Declaration</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2128954195%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-declaration-node/index.html">ShakeVariableDeclarationNode</a>&nbsp;<span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a>&nbsp;</span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expandedType<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-variable-type/index.html">ShakeVariableType</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-variable-type/index.html">ShakeVariableType</a><span class="token operator"> = </span>ShakeVariableType.DYNAMIC<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>access<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-access-describer/index.html">ShakeAccessDescriber</a><span class="token operator"> = </span>ShakeAccessDescriber.PACKAGE<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isStatic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isFinal<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isNative<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isConst<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isOverride<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isInline<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span> : <a href="../com.shakelang.shake.parser.node/-shake-valued-statement-node-impl/index.html">ShakeValuedStatementNodeImpl</a>, <a href="../com.shakelang.shake.parser.node/-shake-file-child-node/index.html">ShakeFileChildNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1326099187%2FClasslikes%2F236034431" anchor-label="ShakeVariableDecreaseNode" id="1326099187%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-decrease-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Decrease</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1326099187%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-decrease-node/index.html">ShakeVariableDecreaseNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="../com.shakelang.shake.parser.node/-shake-valued-statement-node-impl/index.html">ShakeValuedStatementNodeImpl</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1833427343%2FClasslikes%2F236034431" anchor-label="ShakeVariableDivAssignmentNode" id="1833427343%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-div-assignment-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Div</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1833427343%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-div-assignment-node/index.html">ShakeVariableDivAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-947206193%2FClasslikes%2F236034431" anchor-label="ShakeVariableIncreaseNode" id="-947206193%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-increase-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Increase</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-947206193%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-increase-node/index.html">ShakeVariableIncreaseNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="../com.shakelang.shake.parser.node/-shake-valued-statement-node-impl/index.html">ShakeValuedStatementNodeImpl</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-612576770%2FClasslikes%2F236034431" anchor-label="ShakeVariableModAssignmentNode" id="-612576770%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-mod-assignment-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Mod</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-612576770%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-mod-assignment-node/index.html">ShakeVariableModAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-533898500%2FClasslikes%2F236034431" anchor-label="ShakeVariableMulAssignmentNode" id="-533898500%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-mul-assignment-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Mul</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-533898500%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-mul-assignment-node/index.html">ShakeVariableMulAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1759859176%2FClasslikes%2F236034431" anchor-label="ShakeVariablePowAssignmentNode" id="1759859176%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-pow-assignment-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Pow</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1759859176%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-pow-assignment-node/index.html">ShakeVariablePowAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1520357120%2FClasslikes%2F236034431" anchor-label="ShakeVariableSubAssignmentNode" id="-1520357120%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-sub-assignment-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Sub</span><wbr><span>Assignment</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1520357120%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-sub-assignment-node/index.html">ShakeVariableSubAssignmentNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>variable<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-valued-node/index.html">ShakeValuedNode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operatorPosition<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-shake-common-variable-assignment-node/index.html">ShakeCommonVariableAssignmentNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1064953612%2FClasslikes%2F236034431" anchor-label="ShakeVariableUsageNode" id="1064953612%2FClasslikes%2F236034431" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:parser:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:parser:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shake-variable-usage-node/index.html"><span>Shake</span><wbr><span>Variable</span><wbr><span>Usage</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1064953612%2FClasslikes%2F236034431"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:parser:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-shake-variable-usage-node/index.html">ShakeVariableUsageNode</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><a href="../../../../util/parseutils/com.shakelang.shake.util.parseutils.characters.position/-position-map/index.html">PositionMap</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>identifier<span class="token operator">: </span><a href="../com.shakelang.shake.parser.node/-shake-identifier-node/index.html">ShakeIdentifierNode</a></span></span><span class="token punctuation">)</span> : <a href="../com.shakelang.shake.parser.node/-shake-valued-node-impl/index.html">ShakeValuedNodeImpl</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
