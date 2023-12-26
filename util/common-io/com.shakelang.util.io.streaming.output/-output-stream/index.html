@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>OutputStream</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":util:common-io:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":util:common-io:dokkaHtmlPartial/jsMain">js</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":util:common-io:dokkaHtmlPartial/jvmMain">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="com.shakelang.util.common-io::com.shakelang.util.io.streaming.output/OutputStream///PointingToDeclaration//-1244025835">
+  <div class="breadcrumbs"><a href="../../index.html">com.shakelang.util.common-io</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.util.io.streaming.output</a><span class="delimiter">/</span><span class="current">OutputStream</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Output</span><wbr><span><span>Stream</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":util:common-io:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/jsMain" data-toggle=":util:common-io:dokkaHtmlPartial/jsMain">js</button><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/jvmMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/jvmMain" data-toggle=":util:common-io:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">OutputStream</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//util/common-io//util/common-io/src/commonMain/kotlin/com/shakelang/util/io/streaming/output/OutputStream.kt#L5">source</a>)</span></span></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-buffered-output-stream/index.html">BufferedOutputStream</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-byte-array-output-stream/index.html">ByteArrayOutputStream</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-counting-output-stream/index.html">CountingOutputStream</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-data-output-stream/index.html">DataOutputStream</a></div></span></div><div></div></div></div></div></div><div class="content sourceset-dependent-content" data-togglable=":util:common-io:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">OutputStream</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//util/common-io//util/common-io/src/jsMain/kotlin/com/shakelang/util/io/streaming/output/OutputStream.kt#L3">source</a>)</span></span></div></div><div class="content sourceset-dependent-content" data-togglable=":util:common-io:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">typealias </span><a href="index.html">OutputStream</a><span class="token operator"> = </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html">java.io.OutputStream</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//util/common-io//util/common-io/src/jvmMain/kotlin/com/shakelang/util/io/streaming/output/OutputStream.kt#L3">source</a>)</span></span></div></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-352346739%2FConstructors%2F-1415332146" anchor-label="OutputStream" id="-352346739%2FConstructors%2F-1415332146" data-filterable-set=":util:common-io:dokkaHtmlPartial/jsMain,:util:common-io:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":util:common-io:dokkaHtmlPartial/jsMain,:util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/jsMain,:util:common-io:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-output-stream.html"><span>Output</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-352346739%2FConstructors%2F-1415332146"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":util:common-io:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/jsMain" data-toggle=":util:common-io:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-677390540%2FFunctions%2F-1415332146" anchor-label="close" id="-677390540%2FFunctions%2F-1415332146" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close.html"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-677390540%2FFunctions%2F-1415332146"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":util:common-io:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/jsMain" data-toggle=":util:common-io:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Closes this output stream and releases any system resources associated with this stream. The general contract of <code class="lang-kotlin">close</code> is that it closes the output stream. A closed stream cannot perform output operations and cannot be reopened.</p></div></div><div class="content sourceset-dependent-content" data-togglable=":util:common-io:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2078802008%2FFunctions%2F-1415332146" anchor-label="flush" id="-2078802008%2FFunctions%2F-1415332146" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="flush.html"><span><span>flush</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2078802008%2FFunctions%2F-1415332146"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":util:common-io:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/jsMain" data-toggle=":util:common-io:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="flush.html"><span class="token function">flush</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Flushes this output stream and forces any buffered output bytes to be written out. The general contract of <code class="lang-kotlin">flush</code> is that calling it is an indication that, if any bytes previously written have been buffered by the implementation of the output stream, such bytes should immediately be written to their intended destination.</p></div></div><div class="content sourceset-dependent-content" data-togglable=":util:common-io:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="flush.html"><span class="token function">flush</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="297551653%2FFunctions%2F-1415332146" anchor-label="write" id="297551653%2FFunctions%2F-1415332146" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain,:util:common-io:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write.html"><span><span>write</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="297551653%2FFunctions%2F-1415332146"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/commonMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":util:common-io:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":util:common-io:dokkaHtmlPartial/jsMain" data-filterable-set=":util:common-io:dokkaHtmlPartial/jsMain" data-toggle=":util:common-io:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":util:common-io:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Writes <code class="lang-kotlin">b.length</code> bytes from the specified byte array to this output stream. The general contract for <code class="lang-kotlin">write(b)</code> is that it should have exactly the same effect as the call <code class="lang-kotlin">write(b, 0, b.length)</code>.</p></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Writes the specified byte to this output stream. The general contract for <code class="lang-kotlin">write</code> is that one byte is written to the output stream. The byte to be written is the eight low-order bits of the argument <code class="lang-kotlin">b</code>. The 24 high-order bits of <code class="lang-kotlin">b</code> are ignored.</p></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">off<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">len<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Writes <code class="lang-kotlin">len</code> bytes from the specified byte array starting at offset <code class="lang-kotlin">off</code> to this output stream. The general contract for <code class="lang-kotlin">write(b, off, len)</code> is that some of the bytes in the array <code class="lang-kotlin">b</code> are written to the output stream in order; element <code class="lang-kotlin">b[off]</code> is the first byte written and <code class="lang-kotlin">b[off+len-1]</code> is the last byte written by this operation.</p></div></div><div class="content sourceset-dependent-content" data-togglable=":util:common-io:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">b<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">off<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">len<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
