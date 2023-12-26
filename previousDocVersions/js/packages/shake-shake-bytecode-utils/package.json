@@ -1,0 +1,19 @@
+{
+  "name": "shake-shake-bytecode-utils",
+  "version": "0.1.0-SNAPSHOT",
+  "main": "kotlin/shake-shake-bytecode-utils.js",
+  "devDependencies": {},
+  "dependencies": {
+    "path-browserify": "1.0.1",
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "readline": false
+  }
+}

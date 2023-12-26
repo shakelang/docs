@@ -1,0 +1,832 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CreationShakeField</title>
+<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":shake:compiler:processor:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="processor::com.shakelang.shake.processor.program.creation/CreationShakeField///PointingToDeclaration//-1480518712">
+  <div class="breadcrumbs"><a href="../../index.html">processor</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.processor.program.creation</a><span class="delimiter">/</span><span class="current">CreationShakeField</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Creation</span><wbr><span>Shake</span><wbr><span><span>Field</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">CreationShakeField</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>project<span class="token operator">: </span><a href="../-creation-shake-project/index.html">CreationShakeProject</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pkg<span class="token operator">: </span><a href="../-creation-shake-package/index.html">CreationShakePackage</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clazz<span class="token operator">: </span><a href="../-creation-shake-class/index.html">CreationShakeClass</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>parentScope<span class="token operator">: </span><a href="../-creation-shake-scope/index.html">CreationShakeScope</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isStatic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isFinal<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isAbstract<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isPrivate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isProtected<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isPublic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isNative<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>initialValue<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="../-creation-shake-declaration/index.html">CreationShakeDeclaration</a>, <a href="../-creation-shake-assignable/index.html">CreationShakeAssignable</a>, <a href="../../com.shakelang.shake.processor.program.types/-shake-field/index.html">ShakeField</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-2036755189%2FConstructors%2F-1480518712" anchor-label="CreationShakeField" id="-2036755189%2FConstructors%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-creation-shake-field.html"><span>Creation</span><wbr><span>Shake</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2036755189%2FConstructors%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">project<span class="token operator">: </span><a href="../-creation-shake-project/index.html">CreationShakeProject</a><span class="token punctuation">, </span></span><span class="parameter ">pkg<span class="token operator">: </span><a href="../-creation-shake-package/index.html">CreationShakePackage</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">clazz<span class="token operator">: </span><a href="../-creation-shake-class/index.html">CreationShakeClass</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">parentScope<span class="token operator">: </span><a href="../-creation-shake-scope/index.html">CreationShakeScope</a><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">isStatic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">isFinal<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">isAbstract<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">isPrivate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">isProtected<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">isPublic<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">isNative<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">initialValue<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-917729563%2FClasslikes%2F-1480518712" anchor-label="Companion" id="-917729563%2FClasslikes%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-917729563%2FClasslikes%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1520466668%2FProperties%2F-1480518712" anchor-label="actualType" id="-1520466668%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="actual-type.html"><span>actual</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1520466668%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="actual-type.html">actualType</a><span class="token operator">: </span><a href="../-creation-shake-type/index.html">CreationShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1035113019%2FProperties%2F-1480518712" anchor-label="actualValue" id="1035113019%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="actual-value.html"><span>actual</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1035113019%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="actual-value.html">actualValue</a><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1312555322%2FProperties%2F-1480518712" anchor-label="clazz" id="-1312555322%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clazz.html"><span><span>clazz</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1312555322%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="clazz.html">clazz</a><span class="token operator">: </span><a href="../-creation-shake-class/index.html">CreationShakeClass</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1865464726%2FProperties%2F-1480518712" anchor-label="expanding" id="1865464726%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="expanding.html"><span><span>expanding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1865464726%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">var </span><a href="expanding.html">expanding</a><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-534231473%2FProperties%2F-1480518712" anchor-label="initialValue" id="-534231473%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initial-value.html"><span>initial</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-534231473%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="initial-value.html">initialValue</a><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1958223888%2FProperties%2F-1480518712" anchor-label="isAbstract" id="1958223888%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-abstract.html"><span>is</span><wbr><span><span>Abstract</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1958223888%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-abstract.html">isAbstract</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1867635470%2FProperties%2F-1480518712" anchor-label="isFinal" id="-1867635470%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-final.html"><span>is</span><wbr><span><span>Final</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1867635470%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-final.html">isFinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="637679355%2FProperties%2F-1480518712" anchor-label="isNative" id="637679355%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-native.html"><span>is</span><wbr><span><span>Native</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="637679355%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-native.html">isNative</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-36656443%2FProperties%2F-1480518712" anchor-label="isPrivate" id="-36656443%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-private.html"><span>is</span><wbr><span><span>Private</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-36656443%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-private.html">isPrivate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1585513414%2FProperties%2F-1480518712" anchor-label="isProtected" id="-1585513414%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-protected.html"><span>is</span><wbr><span><span>Protected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1585513414%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-protected.html">isProtected</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1532343529%2FProperties%2F-1480518712" anchor-label="isPublic" id="1532343529%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-public.html"><span>is</span><wbr><span><span>Public</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1532343529%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-public.html">isPublic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-157566844%2FProperties%2F-1480518712" anchor-label="isStatic" id="-157566844%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-static.html"><span>is</span><wbr><span><span>Static</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-157566844%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-static.html">isStatic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="709298449%2FProperties%2F-1480518712" anchor-label="name" id="709298449%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="709298449%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2116755668%2FProperties%2F-1480518712" anchor-label="parentScope" id="2116755668%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parent-scope.html"><span>parent</span><wbr><span><span>Scope</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2116755668%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="parent-scope.html">parentScope</a><span class="token operator">: </span><a href="../-creation-shake-scope/index.html">CreationShakeScope</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="178431506%2FProperties%2F-1480518712" anchor-label="pkg" id="178431506%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkg.html"><span><span>pkg</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="178431506%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="pkg.html">pkg</a><span class="token operator">: </span><a href="../-creation-shake-package/index.html">CreationShakePackage</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2078149403%2FProperties%2F-1480518712" anchor-label="project" id="-2078149403%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="project.html"><span><span>project</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2078149403%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="project.html">project</a><span class="token operator">: </span><a href="../-creation-shake-project/index.html">CreationShakeProject</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1592517047%2FProperties%2F-1480518712" anchor-label="qualifiedName" id="1592517047%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="qualified-name.html"><span>qualified</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1592517047%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="qualified-name.html">qualifiedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-651775787%2FProperties%2F-1480518712" anchor-label="signature" id="-651775787%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../com.shakelang.shake.processor.program.types/-shake-field/signature.html"><span><span>signature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-651775787%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.shakelang.shake.processor.program.types/-shake-field/signature.html">signature</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1639073602%2FProperties%2F-1480518712" anchor-label="type" id="1639073602%2FProperties%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1639073602%2FProperties%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">lateinit override </span><span class="token keyword">var </span><a href="type.html">type</a><span class="token operator">: </span><a href="../-creation-shake-type/index.html">CreationShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-148152029%2FFunctions%2F-1480518712" anchor-label="access" id="-148152029%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="access.html"><span><span>access</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-148152029%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="access.html"><span class="token function">access</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../-creation-shake-scope/index.html">CreationShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-757741869%2FFunctions%2F-1480518712" anchor-label="additionAssignType" id="-757741869%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="addition-assign-type.html"><span>addition</span><wbr><span>Assign</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-757741869%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="addition-assign-type.html"><span class="token function">additionAssignType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1489444535%2FFunctions%2F-1480518712" anchor-label="assignType" id="1489444535%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="assign-type.html"><span>assign</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1489444535%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="assign-type.html"><span class="token function">assignType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="31896364%2FFunctions%2F-1480518712" anchor-label="createAddAssignment" id="31896364%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-add-assignment.html"><span>create</span><wbr><span>Add</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="31896364%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-add-assignment.html"><span class="token function">createAddAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-add-assignment/index.html">CreationShakeAddAssignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1273477737%2FFunctions%2F-1480518712" anchor-label="createAssignment" id="-1273477737%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-assignment.html"><span>create</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1273477737%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-assignment.html"><span class="token function">createAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-assignment/index.html">CreationShakeAssignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="801264844%2FFunctions%2F-1480518712" anchor-label="createDecrementAfterAssignment" id="801264844%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-decrement-after-assignment.html"><span>create</span><wbr><span>Decrement</span><wbr><span>After</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="801264844%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-decrement-after-assignment.html"><span class="token function">createDecrementAfterAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-decrement-after/index.html">CreationShakeDecrementAfter</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-368318263%2FFunctions%2F-1480518712" anchor-label="createDecrementBeforeAssignment" id="-368318263%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-decrement-before-assignment.html"><span>create</span><wbr><span>Decrement</span><wbr><span>Before</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-368318263%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-decrement-before-assignment.html"><span class="token function">createDecrementBeforeAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-decrement-before/index.html">CreationShakeDecrementBefore</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="363291696%2FFunctions%2F-1480518712" anchor-label="createDivideAssignment" id="363291696%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-divide-assignment.html"><span>create</span><wbr><span>Divide</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="363291696%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-divide-assignment.html"><span class="token function">createDivideAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-div-assignment/index.html">CreationShakeDivAssignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1262364784%2FFunctions%2F-1480518712" anchor-label="createIncrementAfterAssignment" id="1262364784%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-increment-after-assignment.html"><span>create</span><wbr><span>Increment</span><wbr><span>After</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1262364784%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-increment-after-assignment.html"><span class="token function">createIncrementAfterAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-increment-after/index.html">CreationShakeIncrementAfter</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1040877989%2FFunctions%2F-1480518712" anchor-label="createIncrementBeforeAssignment" id="1040877989%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-increment-before-assignment.html"><span>create</span><wbr><span>Increment</span><wbr><span>Before</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1040877989%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-increment-before-assignment.html"><span class="token function">createIncrementBeforeAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-increment-before/index.html">CreationShakeIncrementBefore</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="295953922%2FFunctions%2F-1480518712" anchor-label="createModulusAssignment" id="295953922%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-modulus-assignment.html"><span>create</span><wbr><span>Modulus</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="295953922%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-modulus-assignment.html"><span class="token function">createModulusAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-mod-assignment/index.html">CreationShakeModAssignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="343835611%2FFunctions%2F-1480518712" anchor-label="createMultiplyAssignment" id="343835611%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-multiply-assignment.html"><span>create</span><wbr><span>Multiply</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="343835611%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-multiply-assignment.html"><span class="token function">createMultiplyAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-mul-assignment/index.html">CreationShakeMulAssignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1203481840%2FFunctions%2F-1480518712" anchor-label="createPowerAssignment" id="-1203481840%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-power-assignment.html"><span>create</span><wbr><span>Power</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1203481840%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-power-assignment.html"><span class="token function">createPowerAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-power-assignment/index.html">CreationShakePowerAssignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-590196533%2FFunctions%2F-1480518712" anchor-label="createSubtractAssignment" id="-590196533%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-creation-shake-assignable/create-subtract-assignment.html"><span>create</span><wbr><span>Subtract</span><wbr><span><span>Assignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-590196533%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-creation-shake-assignable/create-subtract-assignment.html"><span class="token function">createSubtractAssignment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-value/index.html">CreationShakeValue</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code/-creation-shake-sub-assignment/index.html">CreationShakeSubAssignment</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2082820636%2FFunctions%2F-1480518712" anchor-label="decrementAfterType" id="-2082820636%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="decrement-after-type.html"><span>decrement</span><wbr><span>After</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2082820636%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="decrement-after-type.html"><span class="token function">decrementAfterType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="209225003%2FFunctions%2F-1480518712" anchor-label="decrementBeforeType" id="209225003%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="decrement-before-type.html"><span>decrement</span><wbr><span>Before</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="209225003%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="decrement-before-type.html"><span class="token function">decrementBeforeType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="578841092%2FFunctions%2F-1480518712" anchor-label="divisionAssignType" id="578841092%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="division-assign-type.html"><span>division</span><wbr><span>Assign</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="578841092%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="division-assign-type.html"><span class="token function">divisionAssignType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1894314872%2FFunctions%2F-1480518712" anchor-label="incrementAfterType" id="-1894314872%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="increment-after-type.html"><span>increment</span><wbr><span>After</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1894314872%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="increment-after-type.html"><span class="token function">incrementAfterType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1757936391%2FFunctions%2F-1480518712" anchor-label="incrementBeforeType" id="1757936391%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="increment-before-type.html"><span>increment</span><wbr><span>Before</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1757936391%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="increment-before-type.html"><span class="token function">incrementBeforeType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="632180204%2FFunctions%2F-1480518712" anchor-label="lateinitExpanding" id="632180204%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lateinit-expanding.html"><span>lateinit</span><wbr><span><span>Expanding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="632180204%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="lateinit-expanding.html"><span class="token function">lateinitExpanding</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../-creation-shake-type/index.html">CreationShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-850651348%2FFunctions%2F-1480518712" anchor-label="lateinitType" id="-850651348%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lateinit-type.html"><span>lateinit</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-850651348%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="lateinit-type.html"><span class="token function">lateinitType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-creation-shake-type/index.html">CreationShakeType</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../-creation-shake-type/index.html">CreationShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="947065964%2FFunctions%2F-1480518712" anchor-label="modulusAssignType" id="947065964%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modulus-assign-type.html"><span>modulus</span><wbr><span>Assign</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="947065964%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="modulus-assign-type.html"><span class="token function">modulusAssignType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="436358557%2FFunctions%2F-1480518712" anchor-label="multiplicationAssignType" id="436358557%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="multiplication-assign-type.html"><span>multiplication</span><wbr><span>Assign</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436358557%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="multiplication-assign-type.html"><span class="token function">multiplicationAssignType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-512129862%2FFunctions%2F-1480518712" anchor-label="powerAssignType" id="-512129862%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="power-assign-type.html"><span>power</span><wbr><span>Assign</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-512129862%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="power-assign-type.html"><span class="token function">powerAssignType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-55432222%2FFunctions%2F-1480518712" anchor-label="processCode" id="-55432222%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="process-code.html"><span>process</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-55432222%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="process-code.html"><span class="token function">processCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2143045783%2FFunctions%2F-1480518712" anchor-label="subtractionAssignType" id="-2143045783%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="subtraction-assign-type.html"><span>subtraction</span><wbr><span>Assign</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2143045783%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="subtraction-assign-type.html"><span class="token function">subtractionAssignType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a><span class="token punctuation">, </span></span><span class="parameter ">scope<span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types.code/-shake-scope/index.html">ShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.types/-shake-type/index.html">ShakeType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2113092825%2FFunctions%2F-1480518712" anchor-label="toJson" id="2113092825%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-json.html"><span>to</span><wbr><span><span>Json</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2113092825%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-json.html"><span class="token function">toJson</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-65629468%2FFunctions%2F-1480518712" anchor-label="use" id="-65629468%2FFunctions%2F-1480518712" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:compiler:processor:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:compiler:processor:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="use.html"><span><span>use</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-65629468%2FFunctions%2F-1480518712"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:compiler:processor:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="use.html"><span class="token function">use</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><a href="../-creation-shake-scope/index.html">CreationShakeScope</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.processor.program.creation.code.values/-creation-shake-usage/index.html">CreationShakeUsage</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

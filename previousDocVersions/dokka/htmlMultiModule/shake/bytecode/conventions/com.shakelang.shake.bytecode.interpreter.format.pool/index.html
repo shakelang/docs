@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.shakelang.shake.bytecode.interpreter.format.pool</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="com.shakelang.shake.bytecode.conventions::com.shakelang.shake.bytecode.interpreter.format.pool////PointingToDeclaration//2004422178">
+  <div class="breadcrumbs"><a href="../index.html">com.shakelang.shake.bytecode.conventions</a><span class="delimiter">/</span><span class="current">com.shakelang.shake.bytecode.interpreter.format.pool</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1827960873%2FClasslikes%2F2004422178" anchor-label="ConstantPool" id="-1827960873%2FClasslikes%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-constant-pool/index.html"><span>Constant</span><wbr><span><span>Pool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1827960873%2FClasslikes%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-constant-pool/index.html">ConstantPool</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-constant-pool-entry/index.html">ConstantPoolEntry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-constant-pool-entry/index.html">ConstantPoolEntry</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">A ConstantPool is a list of <a href="-constant-pool-entry/index.html">ConstantPoolEntry</a>s We store data inside the <a href="-constant-pool/index.html">ConstantPool</a>. This has the advantage that we can reference to the data by an index. Double-used data will only be stored once, and we can reference to it by the index.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1987328967%2FClasslikes%2F2004422178" anchor-label="ConstantPoolEntry" id="-1987328967%2FClasslikes%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-constant-pool-entry/index.html"><span>Constant</span><wbr><span>Pool</span><wbr><span><span>Entry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1987328967%2FClasslikes%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-constant-pool-entry/index.html">ConstantPoolEntry</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-865996292%2FClasslikes%2F2004422178" anchor-label="ConstantPoolException" id="-865996292%2FClasslikes%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-constant-pool-exception/index.html"><span>Constant</span><wbr><span>Pool</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-865996292%2FClasslikes%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-constant-pool-exception/index.html">ConstantPoolException</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">cause<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html">Exception</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1926510690%2FClasslikes%2F2004422178" anchor-label="ConstantPoolOverflowException" id="-1926510690%2FClasslikes%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-constant-pool-overflow-exception/index.html"><span>Constant</span><wbr><span>Pool</span><wbr><span>Overflow</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926510690%2FClasslikes%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-constant-pool-overflow-exception/index.html">ConstantPoolOverflowException</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">cause<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-constant-pool-exception/index.html">ConstantPoolException</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-794918442%2FClasslikes%2F2004422178" anchor-label="ConstantPoolTypeException" id="-794918442%2FClasslikes%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-constant-pool-type-exception/index.html"><span>Constant</span><wbr><span>Pool</span><wbr><span>Type</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-794918442%2FClasslikes%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-constant-pool-type-exception/index.html">ConstantPoolTypeException</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">cause<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-constant-pool-exception/index.html">ConstantPoolException</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-216811899%2FClasslikes%2F2004422178" anchor-label="MutableConstantPool" id="-216811899%2FClasslikes%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-mutable-constant-pool/index.html"><span>Mutable</span><wbr><span>Constant</span><wbr><span><span>Pool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-216811899%2FClasslikes%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-mutable-constant-pool/index.html">MutableConstantPool</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-constant-pool-entry/index.html">ConstantPoolEntry</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mutableListOf()</span></span><span class="token punctuation">)</span> : <a href="-constant-pool/index.html">ConstantPool</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-constant-pool-entry/index.html">ConstantPoolEntry</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">A <a href="-mutable-constant-pool/index.html">MutableConstantPool</a> is a <a href="-constant-pool/index.html">ConstantPool</a> with the ability to add and remove <a href="-constant-pool-entry/index.html">ConstantPoolEntry</a>s</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+{
+  "name": "shake-util-parseutils",
+  "version": "0.3.0",
+  "main": "kotlin/shake-util-parseutils.js",
+  "devDependencies": {},
+  "dependencies": {
+    "path-browserify": "1.0.1",
+    "format-util": "^1.0.5"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "readline": false
+  }
+}

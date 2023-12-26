@@ -1,0 +1,420 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ShasPTokenInputStream</title>
+<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="com.shakelang.shake.shasambly.shasp::com.shakelang.shake.shasambly.shasp.lexer.token/ShasPTokenInputStream///PointingToDeclaration//881644174">
+  <div class="breadcrumbs"><a href="../../index.html">com.shakelang.shake.shasambly.shasp</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.shasambly.shasp.lexer.token</a><span class="delimiter">/</span><span class="current">ShasPTokenInputStream</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Shas</span><wbr><span>PToken</span><wbr><span>Input</span><wbr><span><span>Stream</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ShasPTokenInputStream</a> : <a href="../../../../../util/parseutils/com.shakelang.util.parseutils.lexer.token.stream/-token-input-stream/index.html">TokenInputStream</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-shas-p-token-type/index.html">ShasPTokenType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../../com.shakelang.shake.lexer.token/-shas-p-token/index.html">ShasPToken</a><span class="token operator">&gt; </span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/Kotlin/dokka/tree/master/examples/gradle/dokka-multimodule-example/shake/shasambly/shasp/src/commonMain/kotlin/com/shakelang/shake/shasambly/shasp/lexer/token/ShasPTokenInputStream.kt#L17">source</a>)</span></span></div><p class="paragraph">A <a href="index.html">ShasPTokenInputStream</a> provides the <a href="../../com.shakelang.shake.lexer.token/-shas-p-token/index.html">ShasPToken</a>s for a Parser. It is created by a Lexer</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-shas-p-token-based-input-stream/index.html">ShasPTokenBasedInputStream</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html">OnDemandLexingShasPTokenInputStream</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-763659458%2FProperties%2F881644174" anchor-label="actual" id="-763659458%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shas-p-token-based-input-stream/index.html#-763659458%2FProperties%2F881644174"><span><span>actual</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-763659458%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shas-p-token-based-input-stream/index.html#-763659458%2FProperties%2F881644174">actual</a><span class="token operator">: </span><a href="../../com.shakelang.shake.lexer.token/-shas-p-token/index.html">ShasPToken</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1369720767%2FProperties%2F881644174" anchor-label="actualEnd" id="-1369720767%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-1369720767%2FProperties%2F881644174"><span>actual</span><wbr><span><span>End</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1369720767%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-1369720767%2FProperties%2F881644174">actualEnd</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2029534983%2FProperties%2F881644174" anchor-label="actualHasValue" id="2029534983%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#2029534983%2FProperties%2F881644174"><span>actual</span><wbr><span>Has</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2029534983%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#2029534983%2FProperties%2F881644174">actualHasValue</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="689532634%2FProperties%2F881644174" anchor-label="actualStart" id="689532634%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#689532634%2FProperties%2F881644174"><span>actual</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="689532634%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#689532634%2FProperties%2F881644174">actualStart</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-720738140%2FProperties%2F881644174" anchor-label="actualType" id="-720738140%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-720738140%2FProperties%2F881644174"><span>actual</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-720738140%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-720738140%2FProperties%2F881644174">actualType</a><span class="token operator">: </span><a href="../-shas-p-token-type/index.html">ShasPTokenType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="56893611%2FProperties%2F881644174" anchor-label="actualValue" id="56893611%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#56893611%2FProperties%2F881644174"><span>actual</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="56893611%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#56893611%2FProperties%2F881644174">actualValue</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1958227214%2FProperties%2F881644174" anchor-label="map" id="-1958227214%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shas-p-token-based-input-stream/index.html#-1958227214%2FProperties%2F881644174"><span><span>map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1958227214%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shas-p-token-based-input-stream/index.html#-1958227214%2FProperties%2F881644174">map</a><span class="token operator">: </span><a href="../../../../../util/parseutils/com.shakelang.util.parseutils.characters.position/-position-map/index.html">PositionMap</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1043552189%2FProperties%2F881644174" anchor-label="position" id="-1043552189%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shas-p-token-based-input-stream/index.html#-1043552189%2FProperties%2F881644174"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1043552189%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shas-p-token-based-input-stream/index.html#-1043552189%2FProperties%2F881644174">position</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-591567893%2FProperties%2F881644174" anchor-label="size" id="-591567893%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shas-p-token-based-input-stream/index.html#-591567893%2FProperties%2F881644174"><span><span>size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-591567893%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shas-p-token-based-input-stream/index.html#-591567893%2FProperties%2F881644174">size</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="259999057%2FProperties%2F881644174" anchor-label="source" id="259999057%2FProperties%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shas-p-token-based-input-stream/index.html#259999057%2FProperties%2F881644174"><span><span>source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="259999057%2FProperties%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shas-p-token-based-input-stream/index.html#259999057%2FProperties%2F881644174">source</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-291446766%2FFunctions%2F881644174" anchor-label="has" id="-291446766%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shas-p-token-based-input-stream/index.html#-291446766%2FFunctions%2F881644174"><span><span>has</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-291446766%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-shas-p-token-based-input-stream/index.html#-291446766%2FFunctions%2F881644174"><span class="token function">has</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">num<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1830748095%2FFunctions%2F881644174" anchor-label="hasNext" id="-1830748095%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-1830748095%2FFunctions%2F881644174"><span>has</span><wbr><span><span>Next</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1830748095%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-1830748095%2FFunctions%2F881644174"><span class="token function">hasNext</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-201093831%2FFunctions%2F881644174" anchor-label="next" id="-201093831%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-201093831%2FFunctions%2F881644174"><span><span>next</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-201093831%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-201093831%2FFunctions%2F881644174"><span class="token function">next</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.lexer.token/-shas-p-token/index.html">ShasPToken</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-269286113%2FFunctions%2F881644174" anchor-label="nextType" id="-269286113%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-269286113%2FFunctions%2F881644174"><span>next</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-269286113%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-269286113%2FFunctions%2F881644174"><span class="token function">nextType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-shas-p-token-type/index.html">ShasPTokenType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1167004560%2FFunctions%2F881644174" anchor-label="nextValue" id="1167004560%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1167004560%2FFunctions%2F881644174"><span>next</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1167004560%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1167004560%2FFunctions%2F881644174"><span class="token function">nextValue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="965387466%2FFunctions%2F881644174" anchor-label="peek" id="965387466%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-184865839%2FFunctions%2F881644174"><span><span>peek</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965387466%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-184865839%2FFunctions%2F881644174"><span class="token function">peek</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.lexer.token/-shas-p-token/index.html">ShasPToken</a></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-shas-p-token-based-input-stream/index.html#-283290577%2FFunctions%2F881644174"><span class="token function">peek</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.shakelang.shake.lexer.token/-shas-p-token/index.html">ShasPToken</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1329994578%2FFunctions%2F881644174" anchor-label="peekEnd" id="-1329994578%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1472256718%2FFunctions%2F881644174"><span>peek</span><wbr><span><span>End</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1329994578%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1472256718%2FFunctions%2F881644174"><span class="token function">peekEnd</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-148493588%2FFunctions%2F881644174"><span class="token function">peekEnd</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1993658390%2FFunctions%2F881644174" anchor-label="peekHasValue" id="-1993658390%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-602690406%2FFunctions%2F881644174"><span>peek</span><wbr><span>Has</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1993658390%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-602690406%2FFunctions%2F881644174"><span class="token function">peekHasValue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#421932472%2FFunctions%2F881644174"><span class="token function">peekHasValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-333729376%2FFunctions%2F881644174" anchor-label="peekStart" id="-333729376%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#230695463%2FFunctions%2F881644174"><span>peek</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-333729376%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#230695463%2FFunctions%2F881644174"><span class="token function">peekStart</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-1418012923%2FFunctions%2F881644174"><span class="token function">peekStart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-733481206%2FFunctions%2F881644174" anchor-label="peekType" id="-733481206%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1481217975%2FFunctions%2F881644174"><span>peek</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-733481206%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1481217975%2FFunctions%2F881644174"><span class="token function">peekType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-shas-p-token-type/index.html">ShasPTokenType</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1696241813%2FFunctions%2F881644174"><span class="token function">peekType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-shas-p-token-type/index.html">ShasPTokenType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-372804094%2FFunctions%2F881644174" anchor-label="peekValue" id="-372804094%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-401943560%2FFunctions%2F881644174"><span>peek</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372804094%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#-401943560%2FFunctions%2F881644174"><span class="token function">peekValue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-on-demand-lexing-shas-p-token-input-stream/index.html#1603418006%2FFunctions%2F881644174"><span class="token function">peekValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2060115894%2FFunctions%2F881644174" anchor-label="skip" id="-2060115894%2FFunctions%2F881644174" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shas-p-token-based-input-stream/index.html#72607789%2FFunctions%2F881644174"><span><span>skip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2060115894%2FFunctions%2F881644174"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-shas-p-token-based-input-stream/index.html#72607789%2FFunctions%2F881644174"><span class="token function">skip</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-shas-p-token-based-input-stream/index.html#636177803%2FFunctions%2F881644174"><span class="token function">skip</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">amount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

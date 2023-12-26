@@ -1,0 +1,20 @@
+{
+  "name": "shake-shake-compiler-processor",
+  "version": "0.1.0",
+  "main": "kotlin/shake-shake-compiler-processor.js",
+  "devDependencies": {},
+  "dependencies": {
+    "path-browserify": "1.0.1",
+    "format-util": "^1.0.5",
+    "@js-joda/core": "3.2.0"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "readline": false
+  }
+}

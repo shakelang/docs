@@ -1,0 +1,563 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ShasamblyInterpretingBase</title>
+<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="com.shakelang.shake.shasambly.shasambly::com.shakelang.shake.shasambly.interpreter/ShasamblyInterpretingBase///PointingToDeclaration//2116438299">
+  <div class="breadcrumbs"><a href="../../index.html">com.shakelang.shake.shasambly.shasambly</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.shasambly.interpreter</a><span class="delimiter">/</span><span class="current">ShasamblyInterpretingBase</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Shasambly</span><wbr><span>Interpreting</span><wbr><span><span>Base</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">ShasamblyInterpretingBase</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memorySize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/Kotlin/dokka/tree/master/examples/gradle/dokka-multimodule-example/shake/shasambly/shasambly/src/commonMain/kotlin/com/shakelang/shake/shasambly/interpreter/ShasamblyInterpretingBase.kt#L16">source</a>)</span></span></div><p class="paragraph">The base of the shasambly interpreter. It contains the core functions of the interpreter that store data and are used to manipulate the interprets data. It does not contain any functions that are used to interpret the data or to execute opcodes.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-shasambly-opcode-executor/index.html">ShasamblyOpcodeExecutor</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1204364898%2FConstructors%2F2116438299" anchor-label="ShasamblyInterpretingBase" id="-1204364898%2FConstructors%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-shasambly-interpreting-base.html"><span>Shasambly</span><wbr><span>Interpreting</span><wbr><span><span>Base</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1204364898%2FConstructors%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memorySize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1844435722%2FClasslikes%2F2116438299" anchor-label="FreeTableControllerObject" id="-1844435722%2FClasslikes%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-free-table-controller-object/index.html"><span>Free</span><wbr><span>Table</span><wbr><span>Controller</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1844435722%2FClasslikes%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-free-table-controller-object/index.html">FreeTableControllerObject</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-free-table-controller-object/-free-table-entry/index.html">ShasamblyInterpretingBase.FreeTableControllerObject.FreeTableEntry</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Free Table</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-511524112%2FClasslikes%2F2116438299" anchor-label="StackControllerObject" id="-511524112%2FClasslikes%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stack-controller-object/index.html"><span>Stack</span><wbr><span>Controller</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-511524112%2FClasslikes%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-stack-controller-object/index.html">StackControllerObject</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1541004561%2FProperties%2F2116438299" anchor-label="exitCode" id="-1541004561%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exit-code.html"><span>exit</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1541004561%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="exit-code.html">exitCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1938701346%2FProperties%2F2116438299" anchor-label="freeTable" id="-1938701346%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free-table.html"><span>free</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1938701346%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="free-table.html">freeTable</a><span class="token operator">: </span><a href="-free-table-controller-object/index.html">ShasamblyInterpretingBase.FreeTableControllerObject</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1245739044%2FProperties%2F2116438299" anchor-label="freeTableEndPointer" id="-1245739044%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free-table-end-pointer.html"><span>free</span><wbr><span>Table</span><wbr><span>End</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1245739044%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="free-table-end-pointer.html">freeTableEndPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The end pointer of the free table.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="215956259%2FProperties%2F2116438299" anchor-label="freeTableStartPointer" id="215956259%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free-table-start-pointer.html"><span>free</span><wbr><span>Table</span><wbr><span>Start</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="215956259%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="free-table-start-pointer.html">freeTableStartPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The start pointer of the free table.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-452116113%2FProperties%2F2116438299" anchor-label="globalsSize" id="-452116113%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="globals-size.html"><span>globals</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-452116113%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="globals-size.html">globalsSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The size of the global variable stack.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-797050485%2FProperties%2F2116438299" anchor-label="instructionPointer" id="-797050485%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="instruction-pointer.html"><span>instruction</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-797050485%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="instruction-pointer.html">instructionPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The current instruction pointer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-744142400%2FProperties%2F2116438299" anchor-label="localStackPointer" id="-744142400%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="local-stack-pointer.html"><span>local</span><wbr><span>Stack</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-744142400%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="local-stack-pointer.html">localStackPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1874585063%2FProperties%2F2116438299" anchor-label="memory" id="-1874585063%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="memory.html"><span><span>memory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1874585063%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="memory.html">memory</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">The memory of the interpreter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="875327256%2FProperties%2F2116438299" anchor-label="memorySize" id="875327256%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="memory-size.html"><span>memory</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="875327256%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="memory-size.html">memorySize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The size of the interpreters' memory.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-689332303%2FProperties%2F2116438299" anchor-label="position" id="-689332303%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="position.html"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-689332303%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="position.html">position</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1603274175%2FProperties%2F2116438299" anchor-label="running" id="-1603274175%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="running.html"><span><span>running</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1603274175%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="running.html">running</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1232113240%2FProperties%2F2116438299" anchor-label="stack" id="1232113240%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stack.html"><span><span>stack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1232113240%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="stack.html">stack</a><span class="token operator">: </span><a href="-stack-controller-object/index.html">ShasamblyInterpretingBase.StackControllerObject</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="758970693%2FProperties%2F2116438299" anchor-label="stackPointer" id="758970693%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stack-pointer.html"><span>stack</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="758970693%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="stack-pointer.html">stackPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The stack pointer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1422133363%2FProperties%2F2116438299" anchor-label="variableStackSize" id="1422133363%2FProperties%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="variable-stack-size.html"><span>variable</span><wbr><span>Stack</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1422133363%2FProperties%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="variable-stack-size.html">variableStackSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="147269426%2FFunctions%2F2116438299" anchor-label="byte" id="147269426%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte.html"><span><span>byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="147269426%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="byte.html"><span class="token function">byte</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1447005775%2FFunctions%2F2116438299" anchor-label="declareGlobal" id="-1447005775%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="declare-global.html"><span>declare</span><wbr><span><span>Global</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1447005775%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="declare-global.html"><span class="token function">declareGlobal</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">chunkSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1312762093%2FFunctions%2F2116438299" anchor-label="decrLocalStack" id="1312762093%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="decr-local-stack.html"><span>decr</span><wbr><span>Local</span><wbr><span><span>Stack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1312762093%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="decr-local-stack.html"><span class="token function">decrLocalStack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1067657683%2FFunctions%2F2116438299" anchor-label="exitProcess" id="-1067657683%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exit-process.html"><span>exit</span><wbr><span><span>Process</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1067657683%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="exit-process.html"><span class="token function">exitProcess</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">code<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-880892047%2FFunctions%2F2116438299" anchor-label="free" id="-880892047%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free.html"><span><span>free</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-880892047%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="free.html"><span class="token function">free</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">address<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">csize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-855305616%2FFunctions%2F2116438299" anchor-label="increaseGlobals" id="-855305616%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="increase-globals.html"><span>increase</span><wbr><span><span>Globals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-855305616%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="increase-globals.html"><span class="token function">increaseGlobals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">chunkSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="605835559%2FFunctions%2F2116438299" anchor-label="incrLocalStack" id="605835559%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="incr-local-stack.html"><span>incr</span><wbr><span>Local</span><wbr><span><span>Stack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="605835559%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="incr-local-stack.html"><span class="token function">incrLocalStack</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">size<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-200509551%2FFunctions%2F2116438299" anchor-label="int" id="-200509551%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="int.html"><span><span>int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-200509551%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="int.html"><span class="token function">int</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-376959938%2FFunctions%2F2116438299" anchor-label="long" id="-376959938%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="long.html"><span><span>long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-376959938%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="long.html"><span class="token function">long</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1851528559%2FFunctions%2F2116438299" anchor-label="read_byte" id="1851528559%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read_byte.html"><span><span>read_byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1851528559%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="read_byte.html"><span class="token function">read_byte</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1932676532%2FFunctions%2F2116438299" anchor-label="read_int" id="1932676532%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read_int.html"><span><span>read_int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1932676532%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="read_int.html"><span class="token function">read_int</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1327299195%2FFunctions%2F2116438299" anchor-label="read_long" id="1327299195%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read_long.html"><span><span>read_long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1327299195%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="read_long.html"><span class="token function">read_long</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1049428039%2FFunctions%2F2116438299" anchor-label="read_short" id="1049428039%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read_short.html"><span><span>read_short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1049428039%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="read_short.html"><span class="token function">read_short</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-242997532%2FFunctions%2F2116438299" anchor-label="short" id="-242997532%2FFunctions%2F2116438299" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="short.html"><span><span>short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-242997532%2FFunctions%2F2116438299"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:shasambly:shasambly:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="short.html"><span class="token function">short</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
