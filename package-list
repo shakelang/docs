@@ -1,6 +1,8 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
+module:shake.bin.cli
+com.shakelang.shake.cli
 module:com.shakelang.util.changelog.changelog
 com.shakelang.util.changelog
 com.shakelang.util.changelog.gui
@@ -8,6 +10,8 @@ com.shakelang.util.changelog.tasks
 module:com.shakelang.util.colorlib
 com.shakelang.util.colorlib
 com.shakelang.util.colorlib.functional
+module:com.shakelang.util.commander
+com.shakelang.util.commander
 module:com.shakelang.util.common-io
 com.shakelang.util.io
 com.shakelang.util.io.streaming.input

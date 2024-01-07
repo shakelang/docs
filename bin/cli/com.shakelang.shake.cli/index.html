@@ -1,0 +1,326 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.shakelang.shake.cli</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":bin:cli:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":bin:cli:dokkaHtmlPartial/jsMain">js</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":bin:cli:dokkaHtmlPartial/jvmMain">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="shake.bin.cli::com.shakelang.shake.cli////PointingToDeclaration//62163748">
+  <div class="breadcrumbs"><a href="../index.html">shake.bin.cli</a><span class="delimiter">/</span><span class="current">com.shakelang.shake.cli</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-365603501%2FClasslikes%2F937480536" anchor-label="CliArgumentParser" id="-365603501%2FClasslikes%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cli-argument-parser/index.html"><span>Cli</span><wbr><span>Argument</span><wbr><span><span>Parser</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-365603501%2FClasslikes%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-cli-argument-parser/index.html">CliArgumentParser</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">options<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-cli-argument-parser/-cli-option/index.html">CliArgumentParser.CliOption</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mutableListOf()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1184554396%2FClasslikes%2F937480536" anchor-label="ConditionFunction" id="1184554396%2FClasslikes%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-condition-function/index.html"><span>Condition</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1184554396%2FClasslikes%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-condition-function/index.html">ConditionFunction</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">A function that returns a boolean as a Condition for <a href="../../../bin/cli/com.shakelang.shake.cli/-recursive-while/index.html">RecursiveWhile</a> loops</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="269948185%2FClasslikes%2F937480536" anchor-label="LoopControls" id="269948185%2FClasslikes%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-loop-controls/index.html"><span>Loop</span><wbr><span><span>Controls</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="269948185%2FClasslikes%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-loop-controls/index.html">LoopControls</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>wBreak<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>wContinue<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-507365742%2FClasslikes%2F937480536" anchor-label="RecursiveWhileBody" id="-507365742%2FClasslikes%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-recursive-while-body/index.html"><span>Recursive</span><wbr><span>While</span><wbr><span><span>Body</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-507365742%2FClasslikes%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-recursive-while-body/index.html">RecursiveWhileBody</a><span class="token operator"> = </span><span class="token keyword"></span><a href="-loop-controls/index.html">LoopControls</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></div><div class="brief "><p class="paragraph">The body of a <a href="../../../bin/cli/com.shakelang.shake.cli/-recursive-while/index.html">RecursiveWhile</a> loop</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="422242765%2FProperties%2F937480536" anchor-label="baseProcessor" id="422242765%2FProperties%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="base-processor.html"><span>base</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="422242765%2FProperties%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="base-processor.html">baseProcessor</a><span class="token operator">: </span><a href="../../../shake/compiler/processor/com.shakelang.shake.processor/-shake-package-based-processor/index.html">ShakePackageBasedProcessor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="277393819%2FProperties%2F937480536" anchor-label="DEBUG" id="277393819%2FProperties%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-b-u-g.html"><span><span>DEBUG</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="277393819%2FProperties%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-d-e-b-u-g.html">DEBUG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Is the program in debug mode?</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1562306716%2FProperties%2F937480536" anchor-label="jsGenerator" id="-1562306716%2FProperties%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="js-generator.html"><span>js</span><wbr><span><span>Generator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1562306716%2FProperties%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="js-generator.html">jsGenerator</a><span class="token operator">: </span><a href="../../../shake/compiler/jsgenerator/com.shakelang.shake.js/-shake-js-generator/index.html">ShakeJsGenerator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1094091230%2FProperties%2F-85009158" anchor-label="readline" id="-1094091230%2FProperties%2F-85009158" data-filterable-set=":bin:cli:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/jsMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="readline.html"><span><span>readline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1094091230%2FProperties%2F-85009158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":bin:cli:dokkaHtmlPartial/jsMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/jsMain" data-active="" data-toggle=":bin:cli:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="readline.html">readline</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="636580786%2FProperties%2F-85009158" anchor-label="rl" id="636580786%2FProperties%2F-85009158" data-filterable-set=":bin:cli:dokkaHtmlPartial/jsMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/jsMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rl.html"><span><span>rl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="636580786%2FProperties%2F-85009158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":bin:cli:dokkaHtmlPartial/jsMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/jsMain" data-active="" data-toggle=":bin:cli:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rl.html">rl</a><span class="token operator">: </span>dynamic</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1779847562%2FProperties%2F937480536" anchor-label="VERSION" id="-1779847562%2FProperties%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-e-r-s-i-o-n.html"><span><span>VERSION</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1779847562%2FProperties%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-v-e-r-s-i-o-n.html">VERSION</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The version of the program</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1699277087%2FFunctions%2F937480536" anchor-label="main" id="-1699277087%2FFunctions%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main.html"><span><span>main</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1699277087%2FFunctions%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="main.html"><span class="token function">main</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">args<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The Main-Method for the ShakeCli</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-648296598%2FFunctions%2F937480536" anchor-label="mainLoop" id="-648296598%2FFunctions%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main-loop.html"><span>main</span><wbr><span><span>Loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-648296598%2FFunctions%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="main-loop.html"><span class="token function">mainLoop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">execute<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1334872716%2FFunctions%2F62163748" anchor-label="readLine" id="1334872716%2FFunctions%2F62163748" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain,:bin:cli:dokkaHtmlPartial/jsMain,:bin:cli:dokkaHtmlPartial/jvmMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain,:bin:cli:dokkaHtmlPartial/jsMain,:bin:cli:dokkaHtmlPartial/jvmMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain,:bin:cli:dokkaHtmlPartial/jsMain,:bin:cli:dokkaHtmlPartial/jvmMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-line.html"><span>read</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1334872716%2FFunctions%2F62163748"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":bin:cli:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":bin:cli:dokkaHtmlPartial/jsMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/jsMain" data-toggle=":bin:cli:dokkaHtmlPartial/jsMain">js</button><button class="platform-bookmark" data-filterable-current=":bin:cli:dokkaHtmlPartial/jvmMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/jvmMain" data-toggle=":bin:cli:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="read-line.html"><span class="token function">readLine</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="read-line.html"><span class="token function">readLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div><div class="content sourceset-dependent-content" data-togglable=":bin:cli:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="read-line.html"><span class="token function">readLine</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="read-line.html"><span class="token function">readLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div><div class="content sourceset-dependent-content" data-togglable=":bin:cli:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="read-line.html"><span class="token function">readLine</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="read-line.html"><span class="token function">readLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1634121023%2FFunctions%2F937480536" anchor-label="recursiveDoWhile" id="-1634121023%2FFunctions%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="recursive-do-while.html"><span>recursive</span><wbr><span>Do</span><wbr><span><span>While</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1634121023%2FFunctions%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="recursive-do-while.html"><span class="token function">recursiveDoWhile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">body<span class="token operator">: </span><a href="-recursive-while-body/index.html">RecursiveWhileBody</a></span></span><span class="token punctuation">)</span></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="recursive-do-while.html"><span class="token function">recursiveDoWhile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">condition<span class="token operator">: </span><a href="-condition-function/index.html">ConditionFunction</a><span class="token punctuation">, </span></span><span class="parameter ">body<span class="token operator">: </span><a href="-recursive-while-body/index.html">RecursiveWhileBody</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Run a recursive do-while loop</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="698463905%2FFunctions%2F937480536" anchor-label="recursiveWhile" id="698463905%2FFunctions%2F937480536" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":bin:cli:dokkaHtmlPartial/commonMain" data-filterable-set=":bin:cli:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="recursive-while.html"><span>recursive</span><wbr><span><span>While</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="698463905%2FFunctions%2F937480536"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bin:cli:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="recursive-while.html"><span class="token function">recursiveWhile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">body<span class="token operator">: </span><a href="-recursive-while-body/index.html">RecursiveWhileBody</a></span></span><span class="token punctuation">)</span></div><br><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="recursive-while.html"><span class="token function">recursiveWhile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">condition<span class="token operator">: </span><a href="-condition-function/index.html">ConditionFunction</a><span class="token punctuation">, </span></span><span class="parameter ">body<span class="token operator">: </span><a href="-recursive-while-body/index.html">RecursiveWhileBody</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Run recursive while loop</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

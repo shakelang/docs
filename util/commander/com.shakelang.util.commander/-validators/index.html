@@ -1,0 +1,930 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Validators</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":util:commander:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="com.shakelang.util.commander::com.shakelang.util.commander/Validators///PointingToDeclaration//-127233709">
+  <div class="breadcrumbs"><a href="../../index.html">com.shakelang.util.commander</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.util.commander</a><span class="delimiter">/</span><span class="current">Validators</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Validators</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Validators</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//util/commander//util/commander/src/commonMain/kotlin/com/shakelang/util/commander/Validators.kt#L3">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-2076110991%2FProperties%2F-127233709" anchor-label="isBoolean" id="-2076110991%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-boolean.html"><span>is</span><wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2076110991%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-boolean.html">isBoolean</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-815665575%2FProperties%2F-127233709" anchor-label="isByte" id="-815665575%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-byte.html"><span>is</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-815665575%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-byte.html">isByte</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-119914832%2FProperties%2F-127233709" anchor-label="isDouble" id="-119914832%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-double.html"><span>is</span><wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-119914832%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-double.html">isDouble</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-866450755%2FProperties%2F-127233709" anchor-label="isFloat" id="-866450755%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-float.html"><span>is</span><wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-866450755%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-float.html">isFloat</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="184070026%2FProperties%2F-127233709" anchor-label="isInt" id="184070026%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-int.html"><span>is</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="184070026%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-int.html">isInt</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1339894939%2FProperties%2F-127233709" anchor-label="isLong" id="-1339894939%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-long.html"><span>is</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1339894939%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-long.html">isLong</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-375304756%2FProperties%2F-127233709" anchor-label="isNegative" id="-375304756%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative.html"><span>is</span><wbr><span><span>Negative</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-375304756%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-negative.html">isNegative</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1718515236%2FProperties%2F-127233709" anchor-label="isNegativeByte" id="1718515236%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-byte.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1718515236%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-negative-byte.html">isNegativeByte</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-18612293%2FProperties%2F-127233709" anchor-label="isNegativeDouble" id="-18612293%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-double.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-18612293%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-negative-double.html">isNegativeDouble</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="383743058%2FProperties%2F-127233709" anchor-label="isNegativeFloat" id="383743058%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-float.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="383743058%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-negative-float.html">isNegativeFloat</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1235649119%2FProperties%2F-127233709" anchor-label="isNegativeInt" id="1235649119%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-int.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1235649119%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-negative-int.html">isNegativeInt</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1194285872%2FProperties%2F-127233709" anchor-label="isNegativeLong" id="1194285872%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-long.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1194285872%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-negative-long.html">isNegativeLong</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1220982322%2FProperties%2F-127233709" anchor-label="isNegativeShort" id="1220982322%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-short.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1220982322%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-negative-short.html">isNegativeShort</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1839191841%2FProperties%2F-127233709" anchor-label="isNotNull" id="-1839191841%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-not-null.html"><span>is</span><wbr><span>Not</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1839191841%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-not-null.html">isNotNull</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1044727482%2FProperties%2F-127233709" anchor-label="isNull" id="1044727482%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-null.html"><span>is</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1044727482%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-null.html">isNull</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="931267720%2FProperties%2F-127233709" anchor-label="isPositive" id="931267720%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive.html"><span>is</span><wbr><span><span>Positive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="931267720%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-positive.html">isPositive</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-748851488%2FProperties%2F-127233709" anchor-label="isPositiveByte" id="-748851488%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-byte.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-748851488%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-positive-byte.html">isPositiveByte</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-336086665%2FProperties%2F-127233709" anchor-label="isPositiveDouble" id="-336086665%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-double.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-336086665%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-positive-double.html">isPositiveDouble</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1204785942%2FProperties%2F-127233709" anchor-label="isPositiveFloat" id="1204785942%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-float.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1204785942%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-positive-float.html">isPositiveFloat</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="47677987%2FProperties%2F-127233709" anchor-label="isPositiveInt" id="47677987%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-int.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="47677987%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-positive-int.html">isPositiveInt</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1273080852%2FProperties%2F-127233709" anchor-label="isPositiveLong" id="-1273080852%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-long.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1273080852%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-positive-long.html">isPositiveLong</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2042025206%2FProperties%2F-127233709" anchor-label="isPositiveShort" id="2042025206%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-short.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2042025206%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-positive-short.html">isPositiveShort</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-29211491%2FProperties%2F-127233709" anchor-label="isShort" id="-29211491%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-short.html"><span>is</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-29211491%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-short.html">isShort</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-973495696%2FProperties%2F-127233709" anchor-label="isString" id="-973495696%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-string.html"><span>is</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-973495696%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-string.html">isString</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1572859036%2FProperties%2F-127233709" anchor-label="isUnsignedByte" id="-1572859036%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-byte.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1572859036%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-unsigned-byte.html">isUnsignedByte</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="713833759%2FProperties%2F-127233709" anchor-label="isUnsignedInt" id="713833759%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-int.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="713833759%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-unsigned-int.html">isUnsignedInt</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2097088400%2FProperties%2F-127233709" anchor-label="isUnsignedLong" id="-2097088400%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-long.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2097088400%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-unsigned-long.html">isUnsignedLong</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2027372302%2FProperties%2F-127233709" anchor-label="isUnsignedShort" id="-2027372302%2FProperties%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-short.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2027372302%2FProperties%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-unsigned-short.html">isUnsignedShort</a><span class="token operator">: </span><a href="../-value-validator/index.html">ValueValidator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1920738288%2FFunctions%2F-127233709" anchor-label="isBoolean" id="-1920738288%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-boolean.html"><span>is</span><wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1920738288%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-boolean.html"><span class="token function">isBoolean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1784642312%2FFunctions%2F-127233709" anchor-label="isByte" id="-1784642312%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-byte.html"><span>is</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1784642312%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-byte.html"><span class="token function">isByte</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-404885233%2FFunctions%2F-127233709" anchor-label="isDouble" id="-404885233%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-double.html"><span>is</span><wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-404885233%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-double.html"><span class="token function">isDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="685513308%2FFunctions%2F-127233709" anchor-label="isFloat" id="685513308%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-float.html"><span>is</span><wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="685513308%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-float.html"><span class="token function">isFloat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1892736105%2FFunctions%2F-127233709" anchor-label="isInt" id="1892736105%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-int.html"><span>is</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1892736105%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-int.html"><span class="token function">isInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1565154044%2FFunctions%2F-127233709" anchor-label="isLong" id="-1565154044%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-long.html"><span>is</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1565154044%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-long.html"><span class="token function">isLong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="530472747%2FFunctions%2F-127233709" anchor-label="isNegative" id="530472747%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative.html"><span>is</span><wbr><span><span>Negative</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="530472747%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-negative.html"><span class="token function">isNegative</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-575533693%2FFunctions%2F-127233709" anchor-label="isNegativeByte" id="-575533693%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-byte.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-575533693%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-negative-byte.html"><span class="token function">isNegativeByte</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1907327706%2FFunctions%2F-127233709" anchor-label="isNegativeDouble" id="1907327706%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-double.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1907327706%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-negative-double.html"><span class="token function">isNegativeDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-486825167%2FFunctions%2F-127233709" anchor-label="isNegativeFloat" id="-486825167%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-float.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-486825167%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-negative-float.html"><span class="token function">isNegativeFloat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1116301698%2FFunctions%2F-127233709" anchor-label="isNegativeInt" id="-1116301698%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-int.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1116301698%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-negative-int.html"><span class="token function">isNegativeInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-356045425%2FFunctions%2F-127233709" anchor-label="isNegativeLong" id="-356045425%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-long.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-356045425%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-negative-long.html"><span class="token function">isNegativeLong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1969611503%2FFunctions%2F-127233709" anchor-label="isNegativeShort" id="-1969611503%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-negative-short.html"><span>is</span><wbr><span>Negative</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1969611503%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-negative-short.html"><span class="token function">isNegativeShort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="51043582%2FFunctions%2F-127233709" anchor-label="isNotNull" id="51043582%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-not-null.html"><span>is</span><wbr><span>Not</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="51043582%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-not-null.html"><span class="token function">isNotNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="871178137%2FFunctions%2F-127233709" anchor-label="isNull" id="871178137%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-null.html"><span>is</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="871178137%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-null.html"><span class="token function">isNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1607820057%2FFunctions%2F-127233709" anchor-label="isPositive" id="-1607820057%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive.html"><span>is</span><wbr><span><span>Positive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1607820057%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-positive.html"><span class="token function">isPositive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1640952513%2FFunctions%2F-127233709" anchor-label="isPositiveByte" id="-1640952513%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-byte.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1640952513%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-positive-byte.html"><span class="token function">isPositiveByte</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="242058134%2FFunctions%2F-127233709" anchor-label="isPositiveDouble" id="242058134%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-double.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="242058134%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-positive-double.html"><span class="token function">isPositiveDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="844929781%2FFunctions%2F-127233709" anchor-label="isPositiveFloat" id="844929781%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-float.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="844929781%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-positive-float.html"><span class="token function">isPositiveFloat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-42291390%2FFunctions%2F-127233709" anchor-label="isPositiveInt" id="-42291390%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-int.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-42291390%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-positive-int.html"><span class="token function">isPositiveInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1421464245%2FFunctions%2F-127233709" anchor-label="isPositiveLong" id="-1421464245%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-long.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1421464245%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-positive-long.html"><span class="token function">isPositiveLong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-637856555%2FFunctions%2F-127233709" anchor-label="isPositiveShort" id="-637856555%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-positive-short.html"><span>is</span><wbr><span>Positive</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-637856555%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-positive-short.html"><span class="token function">isPositiveShort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-797273028%2FFunctions%2F-127233709" anchor-label="isShort" id="-797273028%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-short.html"><span>is</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-797273028%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-short.html"><span class="token function">isShort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="291751119%2FFunctions%2F-127233709" anchor-label="isString" id="291751119%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-string.html"><span>is</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="291751119%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-string.html"><span class="token function">isString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1631094077%2FFunctions%2F-127233709" anchor-label="isUnsignedByte" id="-1631094077%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-byte.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Byte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1631094077%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-unsigned-byte.html"><span class="token function">isUnsignedByte</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2036236606%2FFunctions%2F-127233709" anchor-label="isUnsignedInt" id="2036236606%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-int.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2036236606%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-unsigned-int.html"><span class="token function">isUnsignedInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1411605809%2FFunctions%2F-127233709" anchor-label="isUnsignedLong" id="-1411605809%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-long.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1411605809%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-unsigned-long.html"><span class="token function">isUnsignedLong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-332245039%2FFunctions%2F-127233709" anchor-label="isUnsignedShort" id="-332245039%2FFunctions%2F-127233709" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":util:commander:dokkaHtmlPartial/commonMain" data-filterable-set=":util:commander:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-unsigned-short.html"><span>is</span><wbr><span>Unsigned</span><wbr><span><span>Short</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-332245039%2FFunctions%2F-127233709"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":util:commander:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-unsigned-short.html"><span class="token function">isUnsignedShort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
