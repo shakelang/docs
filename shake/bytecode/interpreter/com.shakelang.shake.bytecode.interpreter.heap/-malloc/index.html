@@ -1,0 +1,338 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Malloc</title>
+<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="com.shakelang.shake.bytecode.interpreter::com.shakelang.shake.bytecode.interpreter.heap/Malloc///PointingToDeclaration//-499373622">
+  <div class="breadcrumbs"><a href="../../index.html">com.shakelang.shake.bytecode.interpreter</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.bytecode.interpreter.heap</a><span class="delimiter">/</span><span class="current">Malloc</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Malloc</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Malloc</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>globalMemory<span class="token operator">: </span><a href="../-global-memory/index.html">GlobalMemory</a></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//shake/bytecode/interpreter//shake/bytecode/interpreter/src/commonMain/kotlin/com/shakelang/shake/bytecode/interpreter/heap/Malloc.kt#L6">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1709957835%2FConstructors%2F-499373622" anchor-label="Malloc" id="1709957835%2FConstructors%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-malloc.html"><span><span>Malloc</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1709957835%2FConstructors%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">globalMemory<span class="token operator">: </span><a href="../-global-memory/index.html">GlobalMemory</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="769520454%2FClasslikes%2F-499373622" anchor-label="Companion" id="769520454%2FClasslikes%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="769520454%2FClasslikes%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1546343700%2FProperties%2F-499373622" anchor-label="freeStartPointer" id="1546343700%2FProperties%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free-start-pointer.html"><span>free</span><wbr><span>Start</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1546343700%2FProperties%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="free-start-pointer.html">freeStartPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-371362338%2FProperties%2F-499373622" anchor-label="freeTailPointer" id="-371362338%2FProperties%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free-tail-pointer.html"><span>free</span><wbr><span>Tail</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-371362338%2FProperties%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="free-tail-pointer.html">freeTailPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-920724425%2FProperties%2F-499373622" anchor-label="globalMemory" id="-920724425%2FProperties%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="global-memory.html"><span>global</span><wbr><span><span>Memory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-920724425%2FProperties%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="global-memory.html">globalMemory</a><span class="token operator">: </span><a href="../-global-memory/index.html">GlobalMemory</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="426358093%2FProperties%2F-499373622" anchor-label="headerSize" id="426358093%2FProperties%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="header-size.html"><span>header</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="426358093%2FProperties%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="header-size.html">headerSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">16</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1803274406%2FProperties%2F-499373622" anchor-label="size" id="-1803274406%2FProperties%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="size.html"><span><span>size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1803274406%2FProperties%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="size.html">size</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1889980829%2FProperties%2F-499373622" anchor-label="usedStartPointer" id="-1889980829%2FProperties%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="used-start-pointer.html"><span>used</span><wbr><span>Start</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1889980829%2FProperties%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="used-start-pointer.html">usedStartPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1174948177%2FProperties%2F-499373622" anchor-label="usedTailPointer" id="-1174948177%2FProperties%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="used-tail-pointer.html"><span>used</span><wbr><span>Tail</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1174948177%2FProperties%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="used-tail-pointer.html">usedTailPointer</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="280986762%2FFunctions%2F-499373622" anchor-label="free" id="280986762%2FFunctions%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free.html"><span><span>free</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="280986762%2FFunctions%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="free.html"><span class="token function">free</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">headerPointer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1795855883%2FFunctions%2F-499373622" anchor-label="freePointer" id="1795855883%2FFunctions%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="free-pointer.html"><span>free</span><wbr><span><span>Pointer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1795855883%2FFunctions%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="free-pointer.html"><span class="token function">freePointer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pointer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1604425350%2FFunctions%2F-499373622" anchor-label="malloc" id="1604425350%2FFunctions%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="malloc.html"><span><span>malloc</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1604425350%2FFunctions%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="malloc.html"><span class="token function">malloc</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">size<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2077021409%2FFunctions%2F-499373622" anchor-label="readHeader" id="2077021409%2FFunctions%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-header.html"><span>read</span><wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2077021409%2FFunctions%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="read-header.html"><span class="token function">readHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pointer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-malloc-header/index.html">MallocHeader</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-188148768%2FFunctions%2F-499373622" anchor-label="readHeaderFor" id="-188148768%2FFunctions%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-header-for.html"><span>read</span><wbr><span>Header</span><wbr><span><span>For</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-188148768%2FFunctions%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="read-header-for.html"><span class="token function">readHeaderFor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pointer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-malloc-header/index.html">MallocHeader</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-243932672%2FFunctions%2F-499373622" anchor-label="writeHeader" id="-243932672%2FFunctions%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-header.html"><span>write</span><wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-243932672%2FFunctions%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="write-header.html"><span class="token function">writeHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pointer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">header<span class="token operator">: </span><a href="../-malloc-header/index.html">MallocHeader</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1542355573%2FFunctions%2F-499373622" anchor-label="writeHeaderFor" id="-1542355573%2FFunctions%2F-499373622" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-header-for.html"><span>write</span><wbr><span>Header</span><wbr><span><span>For</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1542355573%2FFunctions%2F-499373622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:interpreter:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="write-header-for.html"><span class="token function">writeHeaderFor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pointer<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">header<span class="token operator">: </span><a href="../-malloc-header/index.html">MallocHeader</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

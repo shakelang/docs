@@ -63,24 +63,24 @@
   <div class="breadcrumbs"><a href="../../index.html">com.shakelang.shake.bytecode.conventions</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.bytecode.interpreter.format</a><span class="delimiter">/</span><span class="current">Method</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Method</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">Method</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>pool<span class="token operator">: </span><a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nameConstant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>qualifiedNameConstant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>attributes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.shakelang.shake.bytecode.interpreter.format.attribute/-attribute/index.html">Attribute</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//shake/bytecode/conventions//shake/bytecode/conventions/src/commonMain/kotlin/com/shakelang/shake/bytecode/interpreter/format/Method.kt#L13">source</a>)</span></span></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-mutable-method/index.html">MutableMethod</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">Method</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>pool<span class="token operator">: </span><a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>qualifiedNameConstant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>attributes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.shakelang.shake.bytecode.interpreter.format.attribute/-attribute/index.html">Attribute</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//shake/bytecode/conventions//shake/bytecode/conventions/src/commonMain/kotlin/com/shakelang/shake/bytecode/interpreter/format/Method.kt#L37">source</a>)</span></span></div><p class="paragraph">A class representing a method in the bytecode</p><p class="paragraph"><a href="https://spec.shakelang.com/bytecode/storage-format/#methods">Method Specification</a></p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">0.1.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>pool</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The <a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a> of the method</p></div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>qualified</span><wbr><span>Name</span><wbr><span><span>Constant</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The constant of the qualified name of the method</p></div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>flags</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The flags of the method</p></div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>attributes</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The attributes of the method</p></div></div></div></div></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-mutable-method/index.html">MutableMethod</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="-158493747%2FConstructors%2F2004422178" anchor-label="Method" id="-158493747%2FConstructors%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+        <div class="table"><a data-name="1935343592%2FConstructors%2F2004422178" anchor-label="Method" id="1935343592%2FConstructors%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-method.html"><span><span>Method</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-158493747%2FConstructors%2F2004422178"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1935343592%2FConstructors%2F2004422178"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pool<span class="token operator">: </span><a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a><span class="token punctuation">, </span></span><span class="parameter ">nameConstant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">qualifiedNameConstant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter ">attributes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.shakelang.shake.bytecode.interpreter.format.attribute/-attribute/index.html">Attribute</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pool<span class="token operator">: </span><a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a><span class="token punctuation">, </span></span><span class="parameter ">qualifiedNameConstant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a><span class="token punctuation">, </span></span><span class="parameter ">attributes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.shakelang.shake.bytecode.interpreter.format.attribute/-attribute/index.html">Attribute</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Creates a <a href="index.html">Method</a> with the given <a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter.format/-method/[60]init[62].html">pool</a>, <a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter.format/-method/[60]init[62].html">qualifiedNameConstant</a>, <a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter.format/-method/[60]init[62].html">flags</a> and <a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter.format/-method/[60]init[62].html">attributes</a></p></div></div></div>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="attributes.html">attributes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.shakelang.shake.bytecode.interpreter.format.attribute/-attribute/index.html">Attribute</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="attributes.html">attributes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.shakelang.shake.bytecode.interpreter.format.attribute/-attribute/index.html">Attribute</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The attributes of the method</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -133,7 +133,37 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="flags.html">flags</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="flags.html">flags</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a></div><div class="brief "><p class="paragraph">The flags of the method</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="283194845%2FProperties%2F2004422178" anchor-label="isAbstract" id="283194845%2FProperties%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-abstract.html"><span>is</span><wbr><span><span>Abstract</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="283194845%2FProperties%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-abstract.html">isAbstract</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is abstract</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1409988159%2FProperties%2F2004422178" anchor-label="isConstructor" id="-1409988159%2FProperties%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-constructor.html"><span>is</span><wbr><span><span>Constructor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1409988159%2FProperties%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-constructor.html">isConstructor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is a constructor</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -148,7 +178,22 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-final.html">isFinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-final.html">isFinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is final</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="287333384%2FProperties%2F2004422178" anchor-label="isNative" id="287333384%2FProperties%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-native.html"><span>is</span><wbr><span><span>Native</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="287333384%2FProperties%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-native.html">isNative</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is native</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -163,7 +208,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-private.html">isPrivate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-private.html">isPrivate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is private</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -178,7 +223,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-protected.html">isProtected</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-protected.html">isProtected</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is protected</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -193,7 +238,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-public.html">isPublic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-public.html">isPublic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is public</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -208,7 +253,37 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-static.html">isStatic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-static.html">isStatic</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is static</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="244636054%2FProperties%2F2004422178" anchor-label="isStrict" id="244636054%2FProperties%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-strict.html"><span>is</span><wbr><span><span>Strict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="244636054%2FProperties%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-strict.html">isStrict</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is strict</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1419043883%2FProperties%2F2004422178" anchor-label="isSynchronized" id="1419043883%2FProperties%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-synchronized.html"><span>is</span><wbr><span><span>Synchronized</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1419043883%2FProperties%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="is-synchronized.html">isSynchronized</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the method is synchronized</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -223,22 +298,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-596604838%2FProperties%2F2004422178" anchor-label="nameConstant" id="-596604838%2FProperties%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
-          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="name-constant.html"><span>name</span><wbr><span><span>Constant</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-596604838%2FProperties%2F2004422178"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="name-constant.html">nameConstant</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns the name of the method</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -253,7 +313,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="pool.html">pool</a><span class="token operator">: </span><a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="pool.html">pool</a><span class="token operator">: </span><a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a></div><div class="brief "><p class="paragraph">The <a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a> of the bytecode</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -268,7 +328,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="qualified-name.html">qualifiedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="qualified-name.html">qualifiedName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns the qualified name of the method</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -283,7 +343,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="qualified-name-constant.html">qualifiedNameConstant</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="qualified-name-constant.html">qualifiedNameConstant</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The index of an utf8 constant in the <a href="../../com.shakelang.shake.bytecode.interpreter.format.pool/-constant-pool/index.html">ConstantPool</a> that represents the qualified name of the method</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -302,7 +362,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="dump.html"><span class="token function">dump</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="dump.html"><span class="token function">dump</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stream<span class="token operator">: </span><a href="../../../../../util/common-io/com.shakelang.util.io.streaming.output/-data-output-stream/index.html">DataOutputStream</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="dump.html"><span class="token function">dump</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">Dumps the <a href="index.html">Method</a> to a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="dump.html"><span class="token function">dump</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stream<span class="token operator">: </span><a href="../../../../../util/common-io/com.shakelang.util.io.streaming.output/-data-output-stream/index.html">DataOutputStream</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Dumps the <a href="index.html">Method</a> to the given <a href="dump.html">stream</a></p></div></div></div>
                 </div>
               </div>
             </div>
@@ -317,7 +377,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns if the given <a href="equals.html">other</a> object is equal to this <a href="index.html">Method</a></p></div></div></div>
                 </div>
               </div>
             </div>
@@ -332,7 +392,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Returns the hash code of this <a href="index.html">Method</a></p></div></div></div>
                 </div>
               </div>
             </div>

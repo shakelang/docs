@@ -63,7 +63,7 @@
   <div class="breadcrumbs"><a href="../../index.html">com.shakelang.shake.bytecode.conventions</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.bytecode.interpreter</a><span class="delimiter">/</span><span class="current">PCast</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>PCast</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">PCast</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//shake/bytecode/conventions//shake/bytecode/conventions/src/commonMain/kotlin/com/shakelang/shake/bytecode/interpreter/PCast.kt#L3">source</a>)</span></span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">PCast</a><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//shake/bytecode/conventions//shake/bytecode/conventions/src/commonMain/kotlin/com/shakelang/shake/bytecode/interpreter/PCast.kt#L28">source</a>)</span></span></div><p class="paragraph">Constants for casting operations. We cast constants on top of the stack. The stack is a stack of bytes. A cast operation takes the top n bytes and casts them to a different type.</p><p class="paragraph">Syntax of the cast byte: We can write the cast byte as 0xXY in hexadecimal where X is the type we cast from and Y is the type we cast to. It will be interpreted as follows: Read type X from the stack and cast it to type Y. Write the result back to the stack.</p><p class="paragraph">Cast operations will change the size of the stack (if the size of the type we cast to is different from the size of the type we cast from).</p><p class="paragraph">Get more information about the cast byte in the <a href="https://spec.shakelang.com/bytecode/instructions#-84-pcast-0xa0">PCast Bytecode Specification</a></p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">0.1.0</p></span></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -80,7 +80,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e.html">BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e.html">BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-b-y-t-e.html">BYTE_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-b-y-t-e.html">BYTE_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-d-o-u-b-l-e.html">BYTE_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-d-o-u-b-l-e.html">BYTE_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-f-l-o-a-t.html">BYTE_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-f-l-o-a-t.html">BYTE_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-i-n-t.html">BYTE_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-i-n-t.html">BYTE_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-l-o-n-g.html">BYTE_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-l-o-n-g.html">BYTE_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-s-h-o-r-t.html">BYTE_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-s-h-o-r-t.html">BYTE_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-b-y-t-e.html">BYTE_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-b-y-t-e.html">BYTE_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -200,7 +200,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-i-n-t.html">BYTE_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-i-n-t.html">BYTE_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -215,7 +215,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-l-o-n-g.html">BYTE_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-l-o-n-g.html">BYTE_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-s-h-o-r-t.html">BYTE_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-b-y-t-e_-t-o_-u-s-h-o-r-t.html">BYTE_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a byte to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -245,7 +245,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e.html">DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e.html">DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -260,7 +260,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-b-y-t-e.html">DOUBLE_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-b-y-t-e.html">DOUBLE_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -275,7 +275,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-d-o-u-b-l-e.html">DOUBLE_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-d-o-u-b-l-e.html">DOUBLE_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -290,7 +290,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-f-l-o-a-t.html">DOUBLE_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-f-l-o-a-t.html">DOUBLE_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -305,7 +305,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-i-n-t.html">DOUBLE_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-i-n-t.html">DOUBLE_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -320,7 +320,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-l-o-n-g.html">DOUBLE_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-l-o-n-g.html">DOUBLE_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-s-h-o-r-t.html">DOUBLE_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-s-h-o-r-t.html">DOUBLE_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -350,7 +350,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-b-y-t-e.html">DOUBLE_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-b-y-t-e.html">DOUBLE_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -365,7 +365,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-i-n-t.html">DOUBLE_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-i-n-t.html">DOUBLE_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -380,7 +380,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-l-o-n-g.html">DOUBLE_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-l-o-n-g.html">DOUBLE_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -395,7 +395,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-s-h-o-r-t.html">DOUBLE_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-o-u-b-l-e_-t-o_-u-s-h-o-r-t.html">DOUBLE_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a double to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -410,7 +410,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t.html">FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t.html">FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -425,7 +425,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-b-y-t-e.html">FLOAT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-b-y-t-e.html">FLOAT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -440,7 +440,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-d-o-u-b-l-e.html">FLOAT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-d-o-u-b-l-e.html">FLOAT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -455,7 +455,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-f-l-o-a-t.html">FLOAT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-f-l-o-a-t.html">FLOAT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -470,7 +470,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-i-n-t.html">FLOAT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-i-n-t.html">FLOAT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -485,7 +485,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-l-o-n-g.html">FLOAT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-l-o-n-g.html">FLOAT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -500,7 +500,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-s-h-o-r-t.html">FLOAT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-s-h-o-r-t.html">FLOAT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -515,7 +515,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-b-y-t-e.html">FLOAT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-b-y-t-e.html">FLOAT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -530,7 +530,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-i-n-t.html">FLOAT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-i-n-t.html">FLOAT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -545,7 +545,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-l-o-n-g.html">FLOAT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-l-o-n-g.html">FLOAT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -560,7 +560,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-s-h-o-r-t.html">FLOAT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-f-l-o-a-t_-t-o_-u-s-h-o-r-t.html">FLOAT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a float to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -575,7 +575,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t.html">INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t.html">INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -590,7 +590,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-b-y-t-e.html">INT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-b-y-t-e.html">INT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -605,7 +605,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-d-o-u-b-l-e.html">INT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-d-o-u-b-l-e.html">INT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -620,7 +620,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-f-l-o-a-t.html">INT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-f-l-o-a-t.html">INT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -635,7 +635,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-i-n-t.html">INT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-i-n-t.html">INT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -650,7 +650,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-l-o-n-g.html">INT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-l-o-n-g.html">INT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -665,7 +665,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-s-h-o-r-t.html">INT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-s-h-o-r-t.html">INT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -680,7 +680,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-b-y-t-e.html">INT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-b-y-t-e.html">INT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -695,7 +695,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-i-n-t.html">INT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-i-n-t.html">INT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -710,7 +710,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-l-o-n-g.html">INT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-l-o-n-g.html">INT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -725,7 +725,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-s-h-o-r-t.html">INT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-i-n-t_-t-o_-u-s-h-o-r-t.html">INT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an int to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -740,7 +740,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g.html">LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g.html">LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -755,7 +755,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-b-y-t-e.html">LONG_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-b-y-t-e.html">LONG_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -770,7 +770,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-d-o-u-b-l-e.html">LONG_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-d-o-u-b-l-e.html">LONG_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -785,7 +785,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-f-l-o-a-t.html">LONG_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-f-l-o-a-t.html">LONG_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -800,7 +800,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-i-n-t.html">LONG_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-i-n-t.html">LONG_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -815,7 +815,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-l-o-n-g.html">LONG_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-l-o-n-g.html">LONG_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -830,7 +830,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-s-h-o-r-t.html">LONG_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-s-h-o-r-t.html">LONG_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -845,7 +845,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-b-y-t-e.html">LONG_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-b-y-t-e.html">LONG_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -860,7 +860,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-i-n-t.html">LONG_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-i-n-t.html">LONG_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -875,7 +875,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-l-o-n-g.html">LONG_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-l-o-n-g.html">LONG_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -890,7 +890,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-s-h-o-r-t.html">LONG_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-l-o-n-g_-t-o_-u-s-h-o-r-t.html">LONG_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a long to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -905,7 +905,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t.html">SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t.html">SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -920,7 +920,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-b-y-t-e.html">SHORT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-b-y-t-e.html">SHORT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -935,7 +935,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-d-o-u-b-l-e.html">SHORT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-d-o-u-b-l-e.html">SHORT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -950,7 +950,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-f-l-o-a-t.html">SHORT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-f-l-o-a-t.html">SHORT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -965,7 +965,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-i-n-t.html">SHORT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-i-n-t.html">SHORT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -980,7 +980,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-l-o-n-g.html">SHORT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-l-o-n-g.html">SHORT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -995,7 +995,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-s-h-o-r-t.html">SHORT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-s-h-o-r-t.html">SHORT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1010,7 +1010,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-b-y-t-e.html">SHORT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-b-y-t-e.html">SHORT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1025,7 +1025,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-i-n-t.html">SHORT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-i-n-t.html">SHORT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1040,7 +1040,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-l-o-n-g.html">SHORT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-l-o-n-g.html">SHORT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1055,7 +1055,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-s-h-o-r-t.html">SHORT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-h-o-r-t_-t-o_-u-s-h-o-r-t.html">SHORT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from a short to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1070,7 +1070,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e.html">UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e.html">UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1085,7 +1085,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-b-y-t-e.html">UBYTE_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-b-y-t-e.html">UBYTE_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1100,7 +1100,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-d-o-u-b-l-e.html">UBYTE_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-d-o-u-b-l-e.html">UBYTE_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1115,7 +1115,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-f-l-o-a-t.html">UBYTE_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-f-l-o-a-t.html">UBYTE_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1130,7 +1130,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-i-n-t.html">UBYTE_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-i-n-t.html">UBYTE_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1145,7 +1145,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-l-o-n-g.html">UBYTE_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-l-o-n-g.html">UBYTE_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1160,7 +1160,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-s-h-o-r-t.html">UBYTE_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-s-h-o-r-t.html">UBYTE_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1175,7 +1175,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-b-y-t-e.html">UBYTE_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-b-y-t-e.html">UBYTE_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1190,7 +1190,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-i-n-t.html">UBYTE_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-i-n-t.html">UBYTE_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1205,7 +1205,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-l-o-n-g.html">UBYTE_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-l-o-n-g.html">UBYTE_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1220,7 +1220,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-s-h-o-r-t.html">UBYTE_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-b-y-t-e_-t-o_-u-s-h-o-r-t.html">UBYTE_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned byte to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1235,7 +1235,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t.html">UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t.html">UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1250,7 +1250,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-b-y-t-e.html">UINT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-b-y-t-e.html">UINT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1265,7 +1265,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-d-o-u-b-l-e.html">UINT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-d-o-u-b-l-e.html">UINT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1280,7 +1280,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-f-l-o-a-t.html">UINT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-f-l-o-a-t.html">UINT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1295,7 +1295,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-i-n-t.html">UINT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-i-n-t.html">UINT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1310,7 +1310,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-l-o-n-g.html">UINT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-l-o-n-g.html">UINT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1325,7 +1325,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-s-h-o-r-t.html">UINT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-s-h-o-r-t.html">UINT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1340,7 +1340,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-b-y-t-e.html">UINT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-b-y-t-e.html">UINT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1355,7 +1355,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-i-n-t.html">UINT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-i-n-t.html">UINT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1370,7 +1370,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-l-o-n-g.html">UINT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-l-o-n-g.html">UINT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1385,7 +1385,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-s-h-o-r-t.html">UINT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-i-n-t_-t-o_-u-s-h-o-r-t.html">UINT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned int to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1400,7 +1400,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g.html">ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g.html">ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1415,7 +1415,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-b-y-t-e.html">ULONG_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-b-y-t-e.html">ULONG_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1430,7 +1430,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-d-o-u-b-l-e.html">ULONG_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-d-o-u-b-l-e.html">ULONG_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1445,7 +1445,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-f-l-o-a-t.html">ULONG_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-f-l-o-a-t.html">ULONG_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1460,7 +1460,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-i-n-t.html">ULONG_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-i-n-t.html">ULONG_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1475,7 +1475,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-l-o-n-g.html">ULONG_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-l-o-n-g.html">ULONG_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1490,7 +1490,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-s-h-o-r-t.html">ULONG_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-s-h-o-r-t.html">ULONG_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1505,7 +1505,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-b-y-t-e.html">ULONG_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-b-y-t-e.html">ULONG_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1520,7 +1520,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-i-n-t.html">ULONG_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-i-n-t.html">ULONG_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1535,7 +1535,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-l-o-n-g.html">ULONG_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-l-o-n-g.html">ULONG_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1550,7 +1550,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-s-h-o-r-t.html">ULONG_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-l-o-n-g_-t-o_-u-s-h-o-r-t.html">ULONG_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned long to an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1565,7 +1565,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t.html">USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t.html">USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">PCast constant for an unsigned short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1580,7 +1580,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-b-y-t-e.html">USHORT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-b-y-t-e.html">USHORT_TO_BYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to a byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1595,7 +1595,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-d-o-u-b-l-e.html">USHORT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-d-o-u-b-l-e.html">USHORT_TO_DOUBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to a double</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1610,7 +1610,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-f-l-o-a-t.html">USHORT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-f-l-o-a-t.html">USHORT_TO_FLOAT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to a float</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1625,7 +1625,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-i-n-t.html">USHORT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-i-n-t.html">USHORT_TO_INT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to an int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1640,7 +1640,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-l-o-n-g.html">USHORT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-l-o-n-g.html">USHORT_TO_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to a long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1655,7 +1655,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-s-h-o-r-t.html">USHORT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-s-h-o-r-t.html">USHORT_TO_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to a short</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1670,7 +1670,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-b-y-t-e.html">USHORT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-b-y-t-e.html">USHORT_TO_UBYTE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to an unsigned byte</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1685,7 +1685,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-i-n-t.html">USHORT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-i-n-t.html">USHORT_TO_UINT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to an unsigned int</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1700,7 +1700,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-l-o-n-g.html">USHORT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-l-o-n-g.html">USHORT_TO_ULONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to an unsigned long</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -1715,7 +1715,41 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-s-h-o-r-t.html">USHORT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-u-s-h-o-r-t_-t-o_-u-s-h-o-r-t.html">USHORT_TO_USHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Cast from an unsigned short to an unsigned short</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1300485040%2FFunctions%2F2004422178" anchor-label="create" id="1300485040%2FFunctions%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create.html"><span><span>create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1300485040%2FFunctions%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"createByte"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="create.html"><span class="token function">create</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">from<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token punctuation">, </span></span><span class="parameter ">to<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="create.html"><span class="token function">create</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">from<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a><span class="token punctuation">, </span></span><span class="parameter ">to<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Create shortcut for:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="663019568%2FFunctions%2F2004422178" anchor-label="invoke" id="663019568%2FFunctions%2F2004422178" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="invoke.html"><span><span>invoke</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="663019568%2FFunctions%2F2004422178"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:conventions:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"invokeByte"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">from<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token punctuation">, </span></span><span class="parameter ">to<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">from<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a><span class="token punctuation">, </span></span><span class="parameter ">to<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-byte/index.html">UByte</a></div><div class="brief "><p class="paragraph">Invoke is a shortcut for:</p></div></div></div>
                 </div>
               </div>
             </div>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>shl</title>
+<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../../../styles/dokka-style.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../../index.html">
+                            shake
+                    </a>            </div>
+            <div class="library-version">0.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":shake:bytecode:utils:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageids="com.shakelang.shake.bytecode.utils::com.shakelang.shake.bytecode.interpreter.generator/ShakeBytecodeInstructionGenerator/shl/#kotlin.String/PointingToDeclaration//155342067">
+  <div class="breadcrumbs"><a href="../../index.html">com.shakelang.shake.bytecode.utils</a><span class="delimiter">/</span><a href="../index.html">com.shakelang.shake.bytecode.interpreter.generator</a><span class="delimiter">/</span><a href="index.html">ShakeBytecodeInstructionGenerator</a><span class="delimiter">/</span><span class="current">shl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>shl</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="shl.html"><span class="token function">shl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="clearfix"><span class="floating-right">(<a href="https://github.com/shakelang/shake/tree/master//shake/bytecode/utils//shake/bytecode/utils/src/commonMain/kotlin/com/shakelang/shake/bytecode/interpreter/generator/ShakeBytecodeInstructionGenerator.kt#L1739">source</a>)</span></span></div><p class="paragraph">Shift the top variable on the stack left by the second variable on the stack Takes the type of the variables as a string</p><table><thead><tr><th>Identifier</th><th>Type</th><th>Byte Size</th></tr></thead><tbody><tr><td>B</td><td>Byte</td><td>1</td></tr><tr><td>S</td><td>Short</td><td>2</td></tr><tr><td>I</td><td>Int</td><td>4</td></tr><tr><td>J</td><td>Long</td><td>8</td></tr><tr><td>b</td><td>UByte</td><td>1</td></tr><tr><td>s</td><td>UShort</td><td>2</td></tr><tr><td>i</td><td>UInt</td><td>4</td></tr><tr><td>j</td><td>ULong</td><td>8</td></tr><tr><td>Z</td><td>Bool</td><td>1</td></tr><tr><td>C</td><td>Char</td><td>2</td></tr><tr><td>F</td><td>Float</td><td>4</td></tr><tr><td>D</td><td>Double</td><td>8</td></tr></tbody></table><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">0.1.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>type</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The type of the variables to shift left</p></div></div></div></div></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="bshl.html"><span>Shake</span><wbr><span>Bytecode</span><wbr><span>Instruction</span><wbr><span>Generator.</span><wbr><span>bshl</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="sshl.html"><span>Shake</span><wbr><span>Bytecode</span><wbr><span>Instruction</span><wbr><span>Generator.</span><wbr><span>sshl</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="ishl.html"><span>Shake</span><wbr><span>Bytecode</span><wbr><span>Instruction</span><wbr><span>Generator.</span><wbr><span>ishl</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="lshl.html"><span>Shake</span><wbr><span>Bytecode</span><wbr><span>Instruction</span><wbr><span>Generator.</span><wbr><span>lshl</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter/-opcodes/-b-s-h-l.html"><span>Opcodes.</span><wbr><span>BSHL</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter/-opcodes/-s-s-h-l.html"><span>Opcodes.</span><wbr><span>SSHL</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter/-opcodes/-i-s-h-l.html"><span>Opcodes.</span><wbr><span>ISHL</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":shake:bytecode:utils:dokkaHtmlPartial/commonMain" data-filterable-set=":shake:bytecode:utils:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../../../shake/bytecode/conventions/com.shakelang.shake.bytecode.interpreter/-opcodes/-l-s-h-l.html"><span>Opcodes.</span><wbr><span>LSHL</span></a></div></span></div><div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

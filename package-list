@@ -65,12 +65,15 @@ module:com.shakelang.shake.bytecode.generator
 com.shakelang.shake.bytecode.generator
 module:com.shakelang.shake.bytecode.interpreter
 com.shakelang.shake.bytecode.interpreter
+com.shakelang.shake.bytecode.interpreter.heap
+com.shakelang.shake.bytecode.interpreter.natives
 com.shakelang.shake.bytecode.interpreter.wrapper
+module:com.shakelang.shake.bytecode.tools
+com.shakelang.shake.bytecode.tools
 module:com.shakelang.shake.bytecode.utils
 com.shakelang.shake.bytecode.interpreter.generator
 com.shakelang.shake.bytecode.interpreter.generator.attributes
 module:com.shakelang.shake.compiler.jsgenerator
-com.shakelang.shake
 com.shakelang.shake.js
 com.shakelang.shake.js.native
 com.shakelang.shake.js.native.shake.js
@@ -91,9 +94,7 @@ com.shakelang.shake.parser.node.loops
 com.shakelang.shake.parser.node.objects
 com.shakelang.shake.parser.node.variables
 module:com.shakelang.shake.compiler.processor
-com.shakelang.shake
 com.shakelang.shake.processor
-com.shakelang.shake.processor.map
 com.shakelang.shake.processor.program.creation
 com.shakelang.shake.processor.program.creation.code
 com.shakelang.shake.processor.program.creation.code.statements
@@ -123,3 +124,7 @@ com.shakelang.shake.shasambly.generator.shas
 com.shakelang.shake.shasambly.generator.simple
 com.shakelang.shake.shasambly.generator.simple.util.array
 com.shakelang.shake.shasambly.generator.simple.util.function
+module:com.shakelang.util.embed.api
+com.shakelang.util.embed.api
+module:com.shakelang.util.embed.plugin
+com.shakelang.util.embed.plugin
