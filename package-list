@@ -14,6 +14,7 @@ module:com.shakelang.util.commander
 com.shakelang.util.commander
 module:com.shakelang.util.common-io
 com.shakelang.util.io
+com.shakelang.util.io.streaming
 com.shakelang.util.io.streaming.input
 com.shakelang.util.io.streaming.output
 module:com.shakelang.util.environment
