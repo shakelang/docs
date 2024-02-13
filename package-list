@@ -3,6 +3,10 @@ $dokka.linkExtension:html
 
 module:shake.bin.cli
 com.shakelang.shake.cli
+module:com.shakelang.shake.shakespeare
+com.shakelang.shake.shakespeare.builder
+com.shakelang.shake.shakespeare.spec
+com.shakelang.shake.shakespeare.spec.code
 module:com.shakelang.util.changelog.changelog
 com.shakelang.util.changelog
 com.shakelang.util.changelog.gui
